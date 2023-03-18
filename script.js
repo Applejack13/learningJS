@@ -86,21 +86,37 @@
 // };
 
 
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
 
-const hamburger = 3;
-const fries = 3;
-const cola = 0;
-const nuggets = 2;
+// console.log(hamburger === 3 && cola === 2 || fries === 3 && nuggets);
 
-console.log(hamburger === 3 && cola === 2 || fries === 3 && nuggets);
-
-if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
-    console.log("Nice!")
-} else {
-    console.log("We'll leave")
-};
-
-
-let johnReport, alexReport, samReport, mariaReport = 'done';
+// if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
+//     console.log("Nice!")
+// } else {
+//     console.log("We'll leave")
+// };
 
 
+let num = 50;
+
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
+
+// do {
+//     console.log(num);
+//     num++;
+// } 
+// while (num < 55);
+
+for (let i = 1; i < 8; i++) {
+    if (i === 6) {
+        break;
+    }
+
+    console.log(i);
+}
