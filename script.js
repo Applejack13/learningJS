@@ -1,41 +1,41 @@
 // "use sctict";
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
 
-for (i = 0; i < 2; i++) {
-    const a = prompt('Один из последних просмотренных фильмов', ''),
-          b = prompt('На сколько оцените его?', '');
+// for (i = 0; i < 2; i++) {
+//     const a = prompt('Один из последних просмотренных фильмов', ''),
+//           b = prompt('На сколько оцените его?', '');
 
-    if (a != null && b != null && a != "" && b != "" && a.length < 50) {
-        personalMovieDB.movies[a] = b;
-        console.log('Done');
-    } else {
-        console.log('Error');
-        i--;
-    }
+//     if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('Done');
+//     } else {
+//         console.log('Error');
+//         i--;
+//     }
 
-}
+// }
 
-if (personalMovieDB.count < 10) {
-    console.log('Просмотренно довольно мало фильмов');
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-    console.log('Вы классический зритель');
-} else if (personalMovieDB.count >= 30) {
-    console.log('Вы - киноман');
-} else {
-    console.log('Ошибка!');
-}
+// if (personalMovieDB.count < 10) {
+//     console.log('Просмотренно довольно мало фильмов');
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//     console.log('Вы классический зритель');
+// } else if (personalMovieDB.count >= 30) {
+//     console.log('Вы - киноман');
+// } else {
+//     console.log('Ошибка!');
+// }
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
 
 // if (4 == 9) {
@@ -165,66 +165,175 @@ console.log(personalMovieDB);
 // }
 
 
-let num = 20;
+// let num = 20;
 
-function showFirstMessage(text) {
-    console.log(text);
-    let num = 10;
-}
-
-showFirstMessage('Hello World!');
-console.log(num);
-
-// function calc(a, b) {
-//     return (a + b);
+// function showFirstMessage(text) {
+//     console.log(text);
+//     let num = 10;
 // }
 
-// console.log(calc (4, 3));
-// console.log(calc (5, 6));
+// showFirstMessage('Hello World!');
+// console.log(num);
 
-//function declaration 
-function ret() {
-    let num = 50;
-    return num;
-}
+// // function calc(a, b) {
+// //     return (a + b);
+// // }
 
-const anotherNum = ret();
-console.log(anotherNum);
+// // console.log(calc (4, 3));
+// // console.log(calc (5, 6));
 
-// function expression 
-const logger = function() {
-    console.log('Hello');
-};
+// //function declaration 
+// function ret() {
+//     let num = 50;
+//     return num;
+// }
 
-logger();
+// const anotherNum = ret();
+// console.log(anotherNum);
 
-// line function 
-const calc = (a, b) => a + b;
+// // function expression 
+// const logger = function() {
+//     console.log('Hello');
+// };
+
+// logger();
+
+// // line function 
+// const calc = (a, b) => a + b;
 
 
-const usdCurr = 28;
-const eurCurr = 32;
-const discount = 0.9;
+// const usdCurr = 28;
+// const eurCurr = 32;
+// const discount = 0.9;
 
-function convert(amount, curr) {
-    return curr * amount;
-}
+// function convert(amount, curr) {
+//     return curr * amount;
+// }
 
-function promotion(result) {
-    console.log(result * discount);
-}
+// function promotion(result) {
+//     console.log(result * discount);
+// }
 
-promotion(convert(500, usdCurr));
+// promotion(convert(500, usdCurr));
 
-function test() {
-    for (let i = 0; i < 5; i++) {
-        console.log(i);
-        if (i === 3) return;
-    }
-    console.log('Done');
-}
+// function test() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i);
+//         if (i === 3) return;
+//     }
+//     console.log('Done');
+// }
 
-test();
+// test();
 
-function doNothing() {}
-console.log(doNothing() === undefined);
+// function doNothing() {}
+// console.log(doNothing() === undefined);
+
+
+// first task
+// const name = "Vadym";
+
+// function sayHello() {
+//     return 'Hello, ' + name + '!'
+// };
+
+// console.log(sayHello());
+
+// // second task
+//     function returnNeighboringNumbers(num) {
+//         return [num - 1, num, num + 1];
+//     }
+
+//    console.log(returnNeighboringNumbers(62));
+
+// // third task
+
+// function getMathResult(num, times) {
+//     if (typeof(times) !== 'number' || times <= 0) {
+//         return num;
+//     }
+
+//     let str = '';
+
+//     for (let i = 1; i <= times; i++) {
+//         if (i === times) {
+//             str += `${num * i}`;
+//             // Тут без черточек в конце
+//         } else {
+//             str += `${num * i}---`;
+//             // Это тоже самое, что и
+//             // str = str + num * i + "---"
+//         }
+//     }
+
+//     return str;
+// }
+
+// console.log(getMathResult(11, 8));
+
+
+// // Место для первой задачи
+// function firstTask() {
+//     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//     const arr = [3, 5, 8, 16, 20, 23, 50];
+//     const result = [];
+
+//     // Пишем решение вот тут
+// for (let i = 0; i < arr.length; i++) {
+//     result[i] = arr[i];
+// }    
+//     // Не трогаем
+//     console.log(result);
+//     return result;
+// }
+
+
+// // Место для второй задачи
+// function secondTask() {
+//     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//     const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+//     // Пишем решение вот тут
+    
+    
+//     // Не трогаем
+//     console.log(data);
+//     return data;
+// }
+
+
+
+// function thirdTask() {
+//     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//     const data = [5, 10, 'Shopping', 20, 'Homework'];
+//     const result = [];
+
+//     // Пишем решение вот тут
+//     for (let i = 0; i <= data.length ;i++) {
+//         result[i - 1] = data[data.length - i];
+//     }
+    
+//     // Не трогаем
+//     console.log(result);
+//     return result;
+// }
+
+
+// build a tree:
+// let result = '';
+// const length = 15;
+
+// for (let i = 0; i < length; i++) {
+//     for (let j = 0; j < length - i; j++) {
+//         result += " ";
+//     }
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//         result += '*';
+//     }
+
+//     result += '\n';
+// }
+
+// console.log(result);
+
+
