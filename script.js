@@ -334,44 +334,49 @@
 // getCoupeNumber(4);
 
 
-function first() {
-    setTimeout(function() {
-    console.log(1);
-}, 500);
-}
+// function first() {
+//     setTimeout(function() {
+//     console.log(1);
+// }, 500);
+// }
 
-function second() {
-    console.log(2);
-}
+// function second() {
+//     console.log(2);
+// }
 
-first();
-second();
+// first();
+// second();
 
-function learnJS(lang, callback) {
-        console.log(`i'm learning ${lang}`);
-        callback();
-    }
+// function learnJS(lang, callback) {
+//         console.log(`i'm learning ${lang}`);
+//         callback();
+//     }
 
-learnJS('javaScritp', function() {
-    console.log("I finished this lesson")
-});
+// learnJS('javaScritp', function() {
+//     console.log("I finished this lesson")
+// });
 
 
-const options = {
-    name : 'test',   
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    },
-    makeTest: function() {
-        console.log('test');
-    }
+// const options = {
+//     name : 'test',   
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     },
+//     makeTest: function() {
+//         console.log('test');
+//     }
 
-}
+// }
 
-console.log(Object.keys(options).length);
+// options.makeTest();
+
+// const {border, bg} = options.colors;
+// console.log(border);
+
+// console.log(Object.keys(options).length);
 
 // console.log(options.name);
 
@@ -391,3 +396,36 @@ console.log(Object.keys(options).length);
 // }
 
 // console.log(counter);
+
+
+const arr = [1, 2, 3, 4, 5];
+
+arr.sort(compareNum);
+console.log(arr); 
+
+function compareNum(a, b) {
+    return a - b;
+}
+
+// arr[99] = 0;
+// console.log(arr.length);
+
+
+
+// arr.pop();
+// arr.push(10)
+
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+for (let value of arr) {
+    console.log(value);
+}
+
+const str = prompt('');
+const products = str.split(, );
+products.sort();
+console.log(products.join('; '));
