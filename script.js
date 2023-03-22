@@ -299,3 +299,59 @@
 // console.log(result);
 
 
+// // volume and area of ​​a cube
+
+// function calculateVolumeAndArea(length) {
+//     if (typeof (length) !== 'number' || length < 0 || !Number.isInteger(length)){
+//         return 'При вычислении произошла ошибка';
+//     }
+
+//     let volume = 0,
+//         area = 0;
+        
+//         volume = length * length * length;
+//         area = 6 * (length * length);
+    
+//     return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+// }
+
+// calculateVolumeAndArea(11);
+
+
+// // tickets code
+// function getCoupeNumber(num) {
+//     if (!Number.isInteger(num) || typeof(num) !== 'number' || num < 0) {
+//         return "Ошибка. Проверьте правильность введенного номера места";
+//     }
+
+//     if (num === 0 || num > 36) {
+//         return "Таких мест в вагоне не существует";
+//     }
+
+//     return Math.ceil(num / 4);    
+// }
+
+// getCoupeNumber(4);
+
+
+function first() {
+    setTimeout(function() {
+    console.log(1);
+}, 500);
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
+
+function learnJS(lang, callback) {
+        console.log(`i'm learning ${lang}`);
+        callback();
+    }
+
+learnJS('javaScritp', function() {
+    console.log("I finished this lesson")
+});
