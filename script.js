@@ -398,14 +398,14 @@
 // console.log(counter);
 
 
-const arr = [1, 2, 3, 4, 5];
+// const arr = [1, 2, 3, 4, 5];
 
-arr.sort(compareNum);
-console.log(arr); 
+// arr.sort(compareNum);
+// console.log(arr); 
 
-function compareNum(a, b) {
-    return a - b;
-}
+// function compareNum(a, b) {
+//     return a - b;
+// }
 
 // arr[99] = 0;
 // console.log(arr.length);
@@ -421,11 +421,13 @@ function compareNum(a, b) {
 //     console.log(arr[i]);
 // }
 
-for (let value of arr) {
-    console.log(value);
-}
+// for (let value of arr) {
+//     console.log(value);
+// }
 
-const str = prompt('');
-const products = str.split(, );
-products.sort();
-console.log(products.join('; '));
+// const str = prompt('');
+// const products = str.split();
+// products.sort();
+// console.log(products.join('; '));
+
+
