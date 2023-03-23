@@ -431,3 +431,76 @@
 // console.log(products.join('; '));
 
 
+//trying to do the task with arr.(not finished)
+// const personalPlanPeter = {
+//     name: "Peter",
+//     age: "29",
+//     skills: {
+//         languages: ['ru', 'eng'],
+//         programmingLangs: {
+//             js: '20%',
+//             php: '10%'
+//         },
+//         exp: '1 month'
+//     }
+// };
+
+
+// function showExperience(plan) {
+//     const {age} = plan;
+//     const {languages} = plan.skills;
+//     let str = `Мне ${age} и я владею языками: `;
+
+//     languages.forEach(function(lang) {
+//         str += `${lang.toUpperCase()}`
+//     });
+
+//     return str;
+// }
+
+// personalPlanPeter.showAgeAndLangs(personalPlanPeter);
+
+// function showExperience(plan) {
+//     const {exp} = plan.skills;
+//     return exp; 
+// }
+
+// showExperience();
+
+
+function getTimeFromMinutes(time) {
+    if (!Number.isInteger(time) || typeof(time) !== 'number' || time < 0) {
+        return 'Ошибка, проверьте данные';
+
+    }
+
+    const hours = Math.floor(time / 60);
+    const minutes = time % 60;  
+
+    let hoursStr = '';
+
+    switch (hours) {
+        case 0 :
+            hoursStr = 'часов';
+            break;
+        case 1 :
+            hoursStr = 'час';
+            break;
+        case 2 :
+        case 3 :
+        case 4 :
+            hoursStr = 'часа';
+            break;
+        default:
+            hoursStr = 'часов';
+    }
+
+    return `Это ${hoursStr} ${hours} и ${minutes} минут`;
+}
+
+
+getTimeFromMinutes(1400);
+
+
+
+
