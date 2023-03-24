@@ -495,12 +495,22 @@ function getTimeFromMinutes(time) {
             hoursStr = 'часов';
     }
 
-    return `Это ${hoursStr} ${hours} и ${minutes} минут`;
+    return `Это ${hours} ${hoursStr} и ${minutes} минут`;
 }
 
 
 getTimeFromMinutes(1400);
 
 
+function findMaxNumber(a, b, c, d) {
+    if (typeof(a) !== 'number' ||
+        typeof(b) !== 'number' ||
+        typeof(c) !== 'number' ||
+        typeof(d) !== 'number') {
+            return 0;
+        } else {
+           return Math.max(a, b, c, d);
+        }
+}
 
-
+findMaxNumber();
