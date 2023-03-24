@@ -468,49 +468,67 @@
 // showExperience();
 
 
-function getTimeFromMinutes(time) {
-    if (!Number.isInteger(time) || typeof(time) !== 'number' || time < 0) {
-        return 'Ошибка, проверьте данные';
+// function getTimeFromMinutes(time) {
+//     if (!Number.isInteger(time) || typeof(time) !== 'number' || time < 0) {
+//         return 'Ошибка, проверьте данные';
 
-    }
+//     }
 
-    const hours = Math.floor(time / 60);
-    const minutes = time % 60;  
+//     const hours = Math.floor(time / 60);
+//     const minutes = time % 60;  
 
-    let hoursStr = '';
+//     let hoursStr = '';
 
-    switch (hours) {
-        case 0 :
-            hoursStr = 'часов';
-            break;
-        case 1 :
-            hoursStr = 'час';
-            break;
-        case 2 :
-        case 3 :
-        case 4 :
-            hoursStr = 'часа';
-            break;
-        default:
-            hoursStr = 'часов';
-    }
+//     switch (hours) {
+//         case 0 :
+//             hoursStr = 'часов';
+//             break;
+//         case 1 :
+//             hoursStr = 'час';
+//             break;
+//         case 2 :
+//         case 3 :
+//         case 4 :
+//             hoursStr = 'часа';
+//             break;
+//         default:
+//             hoursStr = 'часов';
+//     }
 
-    return `Это ${hours} ${hoursStr} и ${minutes} минут`;
-}
-
-
-getTimeFromMinutes(1400);
+//     return `Это ${hours} ${hoursStr} и ${minutes} минут`;
+// }
 
 
-function findMaxNumber(a, b, c, d) {
-    if (typeof(a) !== 'number' ||
-        typeof(b) !== 'number' ||
-        typeof(c) !== 'number' ||
-        typeof(d) !== 'number') {
-            return 0;
-        } else {
-           return Math.max(a, b, c, d);
-        }
-}
+// getTimeFromMinutes(1400);
 
-findMaxNumber();
+
+// function findMaxNumber(a, b, c, d) {
+//     if (typeof(a) !== 'number' ||
+//         typeof(b) !== 'number' ||
+//         typeof(c) !== 'number' ||
+//         typeof(d) !== 'number') {
+//             return 0;
+//         } else {
+//            return Math.max(a, b, c, d);
+//         }
+// }
+
+// findMaxNumber();
+
+// const soldier = {
+//     healht: 400,
+//     armor: 100
+// };
+
+// const john = Object.create(soldier); 
+
+// const john = {
+//     healht: 100
+// };
+
+//old format
+// john.__proto__ = soldier;
+
+// Object.setPrototypeOf(john, soldier);
+
+// console.log(john.armor);
