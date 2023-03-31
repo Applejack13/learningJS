@@ -532,3 +532,33 @@
 // Object.setPrototypeOf(john, soldier);
 
 // console.log(john.armor);
+
+
+//fibonacci-numbers
+
+function fib(num) {
+    if (num <= 0 || !Number.isInteger(num) || typeof(num) !== 'number') {
+        return '';
+    }
+
+    let result = '';
+    let first = 0;
+    let second = 1;
+
+    for (let i = 0; i < num; i++) {
+        if (i + 1 === num) {
+            result += `${first}`;
+        } else {
+            result += `${first} `;
+        }
+
+        let third = first + second;
+        first = second;
+        second = third;
+    }
+
+    return result;
+}
+
+fib(13);
+
