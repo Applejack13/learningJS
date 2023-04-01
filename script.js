@@ -536,29 +536,149 @@
 
 //fibonacci-numbers
 
-function fib(num) {
-    if (num <= 0 || !Number.isInteger(num) || typeof(num) !== 'number') {
-        return '';
-    }
+// function fib(num) {
+//     if (num <= 0 || !Number.isInteger(num) || typeof(num) !== 'number') {
+//         return '';
+//     }
 
-    let result = '';
-    let first = 0;
-    let second = 1;
+//     let result = '';
+//     let first = 0;
+//     let second = 1;
 
-    for (let i = 0; i < num; i++) {
-        if (i + 1 === num) {
-            result += `${first}`;
-        } else {
-            result += `${first} `;
-        }
+//     for (let i = 0; i < num; i++) {
+//         if (i + 1 === num) {
+//             result += `${first}`;
+//         } else {
+//             result += `${first} `;
+//         }
 
-        let third = first + second;
-        first = second;
-        second = third;
-    }
+//         let third = first + second;
+//         first = second;
+//         second = third;
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
-fib(13);
+// fib(13);
+
+
+// let number = 5; debugger
+
+// function logNumber() {
+//     let number = 4; debugger
+//     console.log(number);
+// }
+
+// number = 6;
+
+// logNumber(); debugger
+
+
+// function createCounter() {
+//     let counter = 0;
+
+//     const myFunction = function() { debugger
+//         counter += 1; debugger
+//         return counter; debugger
+//     }
+
+//     return myFunction;
+// }
+// debugger 
+// const increment = createCounter(); debugger
+// const c1 = increment(); debugger
+// const c2 = increment(); debugger
+// const c3 = increment(); debugger
+
+// console.log(c1, c2, c3);
+
+
+// const restorantData = {
+//     menu: [
+//         {
+//             name: 'Salad Caesar',
+//             price: '14$'
+//         },
+//         {
+//             name: 'Pizza Diavola',
+//             price: '9$'
+//         },
+//         {
+//             name: 'Beefsteak',
+//             price: '17$'
+//         },
+//         {
+//             name: 'Napoleon',
+//             price: '7$'
+//         }
+//     ],
+//     waitors: [
+//         {name: 'Alice', age: 22}, {name: 'John', age: 24}
+//     ],
+//     averageLunchPrice: '20$',
+//     openNow: true
+// };
+
+// function isOpen(prop) {
+//     let answer = '';
+//     prop ? answer = 'Открыто' : answer = 'Закрыто';
+
+//     return answer;
+// }
+
+// console.log(isOpen(restorantData.openNow)); // Выведет "Открыто"
+
+
+// function isAverageLunchPriceTrue(fDish, sDish, average) {
+//     if (+fDish.price.slice(0, -1) + (+sDish.price.slice(0, -1)) < +average.slice(0, -1)) {
+//         return 'Цена ниже средней';
+//     } else {
+//         return 'Цена выше средней';
+//     }
+// }
+
+// console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
+
+
+// function transferWaitors(data) {
+//     const copy = Object.assign({}, data);
+
+//     copy.waitors[0] = [{name: '', age: ''}];
+//     return copy;
+// }
+
+// transferWaitors(restorantData);
+
+// function repeatString(str, n) {
+//     n = parseInt(n); // преобразуем строку в число
+//     let result = '';
+//     for (let i = 0; i < n; i++) {
+//       result += str;
+//     }
+//     return result;
+//   }
+  
+//   repeatString('HA', '55');
+  
+
+// function calculate(x, y, operator) {
+//     x = parseInt(x);
+//     y = parseInt(y);
+
+//     if (operator == '*') {
+//       return  x * y;
+//     } else if (operator == '/') {
+//         return x / y;
+//     } else if (operator == '-') {
+//         return x - y; 
+//     } else if (operator == '+') {
+//         return x + y;
+//     }
+
+//     return `${x} ${operator} ${y}`
+// }
+
+// console.log(calculate(44, 5, '+'));
+
 
