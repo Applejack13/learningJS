@@ -682,3 +682,41 @@
 // console.log(calculate(44, 5, '+'));
 
 
+// const arr = [464654, 6548484164, 4644, 684984684654, 44989765]
+
+// function maxNum(arr) {
+//     if (!arr || arr.length === 0) {
+//         return 'Array is empty';
+//     }
+//     return Math.max.apply(null, arr);
+// }
+
+// console.log(maxNum(arr));
+
+
+// function isPalindrome(str) {
+//     let check = '';
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         check += str[i];
+//     }
+
+//     if(str == check) {
+//     return true;
+//     }
+//     return false;
+// }
+
+// console.log(isPalindrome('racecar'));
+
+
+// factorial 
+// function factorial(n) {
+//     let result = 1;
+//     while (n) {
+//         result *= n--;
+//     }
+    
+//     return result;
+// }
+
+// console.log(factorial(3));
