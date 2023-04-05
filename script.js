@@ -926,3 +926,33 @@ const result = getTotalProgressByrecursion(students);
 
 console.log(result[0]/result[1]);
 
+
+//factorial with using recursion
+function factorialWithRecursion(num) {
+    if (num < 0) {
+      return undefined;
+    } else if (num === 0 || num === 1) {
+      return 1;
+    } else if (!Number.isInteger(num) || typeof(num) !== 'number') {
+      return undefined;
+    } else {
+      return num * factorialWithRecursion(num - 1);
+    }
+  };
+  
+console.log(factorialWithRecursion(5));
+
+
+//factorial
+function factorial(n) {
+    let result = 1;
+    while (n) {
+        result *= n--;
+    }
+    
+    return result;
+}
+
+console.log(factorial(6));
+
+
