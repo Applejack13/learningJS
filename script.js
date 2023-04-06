@@ -846,113 +846,221 @@ link.addEventListener('click' , (event) => {
 // pow(2, 3);
 // pow(2, 4);  
 
-let students = {
-    js: [{
-        name: 'John',
-        progress: 100
-    }, {
-        name: 'Peter',
-        progress: 60
-    }],
+// let students = {
+//     js: [{
+//         name: 'John',
+//         progress: 100
+//     }, {
+//         name: 'Peter',
+//         progress: 60
+//     }],
 
-    html: {
-        basic: [{
-            name: 'Peter',
-            progress: 20
-        }, {
-            name: 'Anna',
-            progress: 18
-        }],
+//     html: {
+//         basic: [{
+//             name: 'Peter',
+//             progress: 20
+//         }, {
+//             name: 'Anna',
+//             progress: 18
+//         }],
 
-        pro: [{
-            name: 'Sam',
-            progress: 10  
-        }]
-    }
-};
+//         pro: [{
+//             name: 'Sam',
+//             progress: 10  
+//         }]
+//     }
+// };
 
-function getTotalProgressByItaration(data) {
-    let total = 0;
-    let students = 0;
+// function getTotalProgressByItaration(data) {
+//     let total = 0;
+//     let students = 0;
 
-    for (let course of Object.values(data)) {
-        if (Array.isArray(course)) {
-            students += course.length;
+//     for (let course of Object.values(data)) {
+//         if (Array.isArray(course)) {
+//             students += course.length;
 
-            for (let i = 0; i < course.length; i++) {
-                total += course[i].progress;
-            }
-        } else {
-            for (let subCourse of Object.values(course)) {
-                students += subCourse.length;
+//             for (let i = 0; i < course.length; i++) {
+//                 total += course[i].progress;
+//             }
+//         } else {
+//             for (let subCourse of Object.values(course)) {
+//                 students += subCourse.length;
 
-                for (let i = 0; i < subCourse.length; i++) {
-                    total += subCourse[i].progress;    
-            }
-        }
-    }
-}
+//                 for (let i = 0; i < subCourse.length; i++) {
+//                     total += subCourse[i].progress;    
+//             }
+//         }
+//     }
+// }
 
-    return total / students;
-}
+//     return total / students;
+// }
 
 
 // console.log(getTotalProgressByItaration(students));
 
 
-function getTotalProgressByrecursion (data) {
-    if (Array.isArray(data)) {
-        let total = 0;
+// function getTotalProgressByrecursion (data) {
+//     if (Array.isArray(data)) {
+//         let total = 0;
 
-        for (let i = 0; i < data.length; i++) {
-            total += data[i].progress;
-        }
+//         for (let i = 0; i < data.length; i++) {
+//             total += data[i].progress;
+//         }
 
-        return [total, data.length];
-    } else {
-        let total = [0, 0];
+//         return [total, data.length];
+//     } else {
+//         let total = [0, 0];
 
-        for (let subData of Object.values(data)) {
-            const subDataArray = getTotalProgressByrecursion(subData);
-            total[0] += subDataArray[0];
-            total[1] += subDataArray[1];
-        }
+//         for (let subData of Object.values(data)) {
+//             const subDataArray = getTotalProgressByrecursion(subData);
+//             total[0] += subDataArray[0];
+//             total[1] += subDataArray[1];
+//         }
 
-        return total;
-    }
-}
+//         return total;
+//     }
+// }
 
-const result = getTotalProgressByrecursion(students);
+// const result = getTotalProgressByrecursion(students);
 
-console.log(result[0]/result[1]);
+// console.log(result[0]/result[1]);
 
 
 //factorial with using recursion
-function factorialWithRecursion(num) {
-    if (num < 0) {
-      return undefined;
-    } else if (num === 0 || num === 1) {
-      return 1;
-    } else if (!Number.isInteger(num) || typeof(num) !== 'number') {
-      return undefined;
-    } else {
-      return num * factorialWithRecursion(num - 1);
-    }
-  };
+// function factorialWithRecursion(num) {
+//     if (num < 0) {
+//       return undefined;
+//     } else if (num === 0 || num === 1) {
+//       return 1;
+//     } else if (!Number.isInteger(num) || typeof(num) !== 'number') {
+//       return undefined;
+//     } else {
+//       return num * factorialWithRecursion(num - 1);
+//     }
+//   };
   
-console.log(factorialWithRecursion(5));
+// console.log(factorialWithRecursion(5));
 
 
 //factorial
-function factorial(n) {
-    let result = 1;
-    while (n) {
-        result *= n--;
-    }
+// function factorial(n) {
+//     let result = 1;
+//     while (n) {
+//         result *= n--;
+//     }
     
-    return result;
-}
+//     return result;
+// }
 
-console.log(factorial(6));
+// console.log(factorial(6));
 
+
+// Click on touchscreens
+window.addEventListener('DOMContentLoaded', () => {
+    const box = document.querySelector('.box');
+
+    box.addEventListener('touchstart', (e) =>{
+        e.preventDefault();
+
+        console.log('Start');
+    });
+    
+    box.addEventListener('touchmove', (e) =>{
+        e.preventDefault();
+
+        console.log('Move');
+    });
+    
+    box.addEventListener('touchend', (e) =>{
+        e.preventDefault();
+
+        console.log('End');
+    });
+});
+
+
+// const shops = [
+//     {rice: 500},
+//     {oil: 200},
+//     {bread: 50}
+// ];
+
+// const budget = [5000, 15000, 25000];
+
+// const map = new Map([
+//     [{paper: 400}, 8000]
+// ]);
+
+// shops.forEach((shop, i) => {
+//     map.set(shop, budget[i])
+// });
+
+
+// console.log(map);
+// console.log(map.get(shops[0]));
+// console.log(map.has(shops[0]));
+// map.delete(key);
+// map.clear();
+// map.size;
+// map.keys
+
+// const newestArr = [1, 4, 5, 7, 88, 46, 48, 997, 4, 87, 88];
+
+// const set = new Set(newestArr);
+
+// function unique(newestArr) {
+//     return Array.from(new Set(newestArr))
+// };
+
+// console.log(unique(newestArr));
+
+// set.add(45)
+//    .add(997);
+
+// console.log(set);
+
+// const bigint = 654651321354684321321679879874654654n;
+// const samebigint = BigInt(654651321354684321321679879874654654);
+
+// console.log(bigint);
+// console.log(samebigint);
+
+const newButtons = document.querySelectorAll('button'),
+      newWrapper = document.querySelector('.wrapper');
+
+// console.log(newButtons[4].classList.length);
+// console.log(newButtons[1].classList.item(0));
+// console.log(newButtons[1].classList.add('red'));
+// console.log(newButtons[1].classList.remove('first-button'));
+// console.log(newButtons[1].classList.toggle('first-button'));
+
+// if (newButtons[1].classList.contains('red')) {
+//     console.log('red');
+// }
+
+newButtons[0].addEventListener('click', () => {
+    // if (!newButtons[1].classList.contains('red')) {
+    //     newButtons[1].classList.add('red');
+    // } else {
+    //     newButtons[1].classList.remove('red');
+    // }
+    newButtons[1].classList.toggle('red');
+});
+
+newWrapper.addEventListener('click', (e) =>{
+    if (e.target && e.target.matches('button.red')) {
+        console.log('Hello');
+    }
+});
+
+// newButtons.forEach(createNewBtns => {
+//     createNewBtns.addEventListener('click', () => {
+//         console.log('Hello!!!')
+//     });
+// });
+
+const createNewBtns = document.createElement('button');
+createNewBtns.classList.add('red');
+newWrapper.append(createNewBtns);
 

@@ -11,3 +11,16 @@ a {
     color: white;
     background-color:darkgreen;
 }
+
+.red {
+    color:aqua;
+    background-color: olive;
+}
+
+.wrapper {
+    background-color: gray;
+}
+
+.second-container {
+    background-color:darkred;
+}
