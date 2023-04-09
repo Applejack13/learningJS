@@ -1064,3 +1064,27 @@ const createNewBtns = document.createElement('button');
 createNewBtns.classList.add('red');
 newWrapper.append(createNewBtns);
 
+
+// const btn = document.querySelector('.btn');
+// let timerId,
+//     j = 0;
+// btn.addEventListener('click', () => {
+//     // const timerId = setTimeout(logger, 2000);
+//     timerId = setInterval(logger, 2000);
+// });
+
+
+// function logger() {
+//     if (j === 3) {
+//         clearInterval(timerId);
+//     }
+//     console.log('Hello');
+//     j++;
+// }
+
+// //recursion setTimeout
+// let id = setTimeout(function log(){
+//     console.log("It's working!");
+//     id = setTimeout(log, 500);
+// }, 500);
+
