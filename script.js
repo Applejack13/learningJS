@@ -1088,3 +1088,68 @@ newWrapper.append(createNewBtns);
 //     id = setTimeout(log, 500);
 // }, 500);
 
+
+// function bmi(weight, height) {
+//     var result = weight/Math.pow(height,2) 
+    
+//     if (result <= 18.5) {
+//       return "Underweight";
+//     } else if (result <= 25) {
+//       return "Normal";
+//     } else if (result <= 30) {
+//       return "Overweight";
+//     } else {
+//       return "Obese";
+//     }
+    
+//   }
+
+// // function which count dogs and cats years
+// let humanYears,
+//     catYears,
+//     dogYears;
+
+
+// var humanYearsCatYearsDogYears = function(humanYears) {
+    
+//     if (Number.isInteger(humanYears) && humanYears == 1) {
+//         catYears = 15;
+//         dogYears = 15;
+//     } else if (Number.isInteger(humanYears) && humanYears == 2) {
+//         catYears = 24;
+//         dogYears = 24;
+//     } else if (Number.isInteger(humanYears) && humanYears > 2) {
+//         catYears = 24 + (humanYears - 2) * 4;
+//         dogYears = 24 + (humanYears - 2) * 5;
+//     } else {
+//         return 'Error!';
+//     }
+
+//     return [humanYears, catYears, dogYears];
+//   };
+  
+
+// //sheep counter
+// function countSheep(num) {
+//     return Array.from({ length: num }, (_, i) => `${i + 1} sheep...`).join('');
+//   }
+  
+//   console.log(countSheep(44));
+  
+
+// //fraffic light function
+// function updateLight(current) {
+//   if (current == 'green') {
+//     return 'yellow';
+//   } else if (current == 'yellow') {
+//     return 'red';
+//   } else if (current == 'red') {
+//     return'green';
+//   } else {
+//     return 'Error!'
+//   }
+// };
+
+//   console.log(updateLight('black'));
+
+
