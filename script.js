@@ -1153,3 +1153,182 @@ newWrapper.append(createNewBtns);
 //   console.log(updateLight('black'));
 
 
+// function sumEvenNumbers(input) {
+//     let result = 0;
+
+//     for (let i = 0; i < input.length; i++) {
+//         const num = input[i];
+//         if (typeof(num) === 'number' && num % 2 === 0 && num % 1 === 0) {
+//             result += num;
+//         }
+//     }
+//     return result;
+// };
+
+
+//oppozite number
+// function opposite(number) {
+//     if (number > 0) {
+//         return -number;
+//     } else if (number < 0) {
+//         return -number;
+//     } else {
+//         return number;
+//     }
+// }
+
+// console.log(opposite(0));
+
+
+// function noSpace(x){
+//     let spaceDelete = x.trim();
+//     return spaceDelete;
+// }
+
+
+//delete all spaces
+// function noSpace(x){
+//     let spaceDelete = x.trim();
+//     return spaceDelete.replace(/\s+/g, '');
+//   }
+  
+//find the element in arr
+// function findNeedle(haystack) {
+//     let result = haystack.indexOf('needle');
+//     return `"found the needle at position "${result}`;
+// }
+
+//retunt array - => +/+ => -
+// function invert(array) {
+//         return array.map(x => -x);
+//       }
+
+
+//sum of numbers from 0 to num
+// var summation = function (num) {
+//     let result = 0;
+
+//     if (Number.isInteger(num) && num > 0) {
+//     for (let i = 1; i <= num; i++) {
+//         result += i; 
+//         }
+//     } else {
+//         return  'Error';
+//     }
+//     return result;
+// }
+
+// console.log(summation(8));
+
+
+//reverse srt
+// function solution(str){
+//     let reverseStr = str.split("").reverse().join("");
+//     return reverseStr;
+// }
+
+// console.log(solution("Hello!"));
+
+
+// move Zero to end of arr
+// function moveZeros(arr) {
+//     let zeros = [],
+//         noZeros = [];
+    
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === 0) {
+//             zeros.push(arr[i]);
+//         } else {
+//             noZeros.push(arr[i]);
+//         }
+//     }
+
+//     return [...noZeros, ...zeros];
+//   }
+
+
+//year to century
+// function century(year) {
+//     return Math.ceil(year/100);
+// }
+// console.log(century(1116));
+
+
+//sum of numbers from a to b
+// function getSum(a, b) {
+//     let arr = 0;
+
+//     if (a <= b) {
+//         for (let i = a; i <= b; i++) {
+//             arr += i; 
+//         }
+//     } else {
+//         for (let i = b; i <= a; i++) {
+//             arr += i;
+//         }
+//     }
+
+//     return arr;
+// }
+
+// console.log(getSum(314, 540));
+
+
+//max and min number
+// var min = function(list){
+//     let maxNum = Math.max(...list);
+
+//     return maxNum
+// }
+
+// var max = function(list){
+//     let minNum = Math.min(...list);
+    
+//     return minNum;
+// }
+
+
+//sum of 2 min numbers
+// function sumTwoSmallestNumbers(numbers) {  
+//     if(Array.isArray(numbers) && numbers.length >= 2) {
+//         const sortedNumbers = [...numbers].sort((a, b) => a - b);
+//         return sortedNumbers[0] + sortedNumbers[1]; 
+//     }
+
+//     return null;
+// };
+
+
+//compares the number of characters
+// function XO(str) {
+//     let countX = 0,
+//         countO = 0;
+
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i].toLowerCase() === 'x') {
+//             countX++;
+//         } else if (str[i].toLowerCase() === 'o') {
+//             countO++;
+//         }
+//     }
+
+//     return countO === countX;
+// };
+
+
+//the same function
+// function XO(str) {
+//     return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;
+// }
+
+// console.log(XO('xoxoxoxodogsdgoxozoxxxxxxosdgjdog'));
+
+
+//return reverse str
+// function reverseWords(str){
+//     return str.split(' ').reverse().join(' ');
+//   }
+
+// console.log(reverseWords("This is my first function"));
+
+
