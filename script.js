@@ -1324,11 +1324,82 @@ newWrapper.append(createNewBtns);
 // console.log(XO('xoxoxoxodogsdgoxozoxxxxxxosdgjdog'));
 
 
-//return reverse str
+// return reverse str
 // function reverseWords(str){
-//     return str.split(' ').reverse().join(' ');
+//     return str.split(' ').reverse().join(' ');//разбиваем строку на массив, делаем реверс, объеденяем полученный массив и превращаем его в строку.
 //   }
 
 // console.log(reverseWords("This is my first function"));
 
 
+//JadenCase format
+// String.prototype.toJadenCase = function() {
+//     let words = this.split(' ');
+  
+//     for (let i = 0; i < words.length; i++) {
+//       words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+//     }
+  
+//     return words.join(' ');
+//   };
+
+
+//dividing array to 2 sum of numbers
+// function twoTeams(arr) {
+//     let team1 = 0;
+//     let team2 = 0;
+  
+//     for (let i = 0; i < arr.length; i++) {
+//       if (i % 2 === 0) {
+//         team1 += arr[i];
+//       } else {
+//         team2 += arr[i];
+//       }
+//     }
+  
+//     return [team1, team2];
+//   }
+  
+//   console.log(twoTeams([1, 2, 3, 4, 5, 6])); // [9, 6]
+  
+
+//square of sum of numbers
+// function squareSum(numbers){
+//     let result = 0;
+
+//     for(let i = 0; i < numbers.length; i++) {
+//         result += numbers[i] ** 2;    
+//     }
+
+//     return result;
+// }
+
+// console.log(squareSum([3, 2, 5])); 
+
+
+//add 2 numbers without '+'
+// function add(a, b) {
+//     if (b == 0) {
+//       return a;
+//     } else {
+//       return add(a ^ b, (a & b) << 1);
+//     }
+//   }
+  
+//   console.log(add(5, 3)); // Output: 8
+  
+
+//checking '!' in str
+// function removeWordsWithOneExclamation(sentence) {
+//     let words = sentence.split(" ");
+//     let result = [];
+  
+//     for (let i = 0; i < words.length; i++) {
+//       let word = words[i];
+//       if (word.split("!").length - 1 !== 1) {
+//         result.push(word);
+//       }
+//     }
+  
+//     return result.join(" ");
+//   }

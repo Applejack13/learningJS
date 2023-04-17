@@ -1,0 +1,53 @@
+"use strict";
+
+//code to convert miles per imperial gallon to kilometers per liter
+// function converter (mpg) {
+//     let liter = 1,
+//         kilometer = 1,
+//         imperialGallon = 4.54609188 * liter,
+//         mile =  1.609344 * kilometer,
+//         kph = mpg/(imperialGallon / mile);
+
+//     return kph.toFixed(2);
+// }
+
+// console.log(converter(10));
+
+
+// sum of positive numbers in arr
+// function positiveSum(arr) {
+//     let sum = 0;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > 0) {
+//             sum += arr[i];
+//         }
+//     }
+
+//     return sum;
+// }
+
+
+// odd or even
+// function oddOrEven(array) {
+//     let sum = 0;
+
+//     for (let i = 0; i < array.length; i++) {
+//         sum += array[i];
+//     }
+//         if (sum % 2 == 0) {
+//             return 'even';
+//         } else {
+//             return 'odd';
+//         }
+
+//  }
+
+//  console.log(oddOrEven([12, 22, 3]));
+
+
+//arr between a and b
+function between(a, b) {
+    
+
+}
