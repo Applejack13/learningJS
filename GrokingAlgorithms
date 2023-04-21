@@ -1,0 +1,42 @@
+"use strict";
+
+// //make an array
+// function between(a, b) {
+//     let array = [];
+
+//     for (let i = a; i <= b; i++) {
+//         array.push(i);
+//     }
+
+//     return array;
+// }
+
+
+// let arr = between(1, 100);
+
+
+// //binary search
+// function binarySearch(array, target) {
+//     let left = 0;
+//     let right = array.length - 1;
+  
+//     while (left <= right) {
+//       const mid = Math.floor((left + right) / 2);
+  
+//       if (array[mid] === target) {
+//         return mid;
+//       } else if (array[mid] < target) {
+//         left = mid + 1;
+//       } else {
+//         right = mid - 1;
+//       }
+//     }
+  
+//     return -1;
+//   }
+
+
+// console.log(binarySearch(arr, 25));
+
+
+//

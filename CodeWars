@@ -227,4 +227,33 @@
 // console.log(smash(['hello', 'world', 'this', 'is', 'great'])); //hello world this is great
 
 
-//
+//string to arr
+// function stringToArray(string){
+//     return string.split(" ");
+//   }
+
+// console.log(stringToArray("Jdsdjsh osdifdsf hlskdh kjshd")); //[ 'Jdsdjsh', 'osdifdsf', 'hlskdh', 'kjshd' ]
+
+
+//paper scissors rock
+// function rockPaperScissors(player1, player2) {
+//     if (player1 === player2) {
+//       return "Draw!";
+//     } else if (
+//       (player1 === "rock" && player2 === "scissors") ||
+//       (player1 === "scissors" && player2 === "paper") ||
+//       (player1 === "paper" && player2 === "rock")
+//     ) {
+//       return "Player 1 won!";
+//     } else {
+//       return "Player 2 won!";
+//     }
+//   }
+  
+
+//myLearning
+
+function myLearning (hours) {
+    
+}
+
