@@ -251,9 +251,144 @@
 //   }
   
 
-//myLearning
+//delete every secondth element
+// function removeEveryOther(arr){
+//     for (let i = 1; i < arr.length; i++) {
+//       arr.splice(i, 1);
+//     }
+//     return arr;
+// }
 
-function myLearning (hours) {
+// console.log(removeEveryOther([11, 12, 13, 14, 15, 16]));
+
+
+//kmh => ms
+// function cockroachSpeed(s) {
+//     return Math.floor(s * 27.777778);
+
+//   }
+
+//   console.log(cockroachSpeed(1.08));
+
+
+//srt to AlternatingCase
+// String.prototype.toAlternatingCase = function () {
+//     let result = "";
+  
+//     for (let i = 0; i < this.length; i++) {
+//       if (this[i] === this[i].toUpperCase()) {
+//         result += this[i].toLowerCase();
+//       } else {
+//         result += this[i].toUpperCase();
+//       }
+//     }
+  
+//     return result;
+//   }
+  
+//   console.log("FLIH khfgjfh KJHhkjhK".toAlternatingCase()); 
+  
+
+//find numbers which are divisible by given number
+// function divisibleBy(numbers, divisor){
+//     let result = [];
+
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] % divisor === 0) {
+//             result.push(numbers[i]); 
+//         } else {
+
+//         }
+//     }
+
+//     return result;
+// }
+
+// console.log(divisibleBy([1,2,3,4,5,6], 3));
+
+
+//tips
+// function calculateTip(amount, rating) {
+//     rating = rating.toLowerCase();
     
-}
+//     switch (rating) {
+//       case 'terrible':
+//         return 0;
+//       case 'poor':
+//         return Math.ceil(amount * 0.05);
+//       case 'good':
+//         return Math.ceil(amount * 0.1);
+//       case 'great':
+//         return Math.ceil(amount * 0.15);
+//       case 'excellent':
+//         return Math.ceil(amount * 0.2);
+//       default:
+//         return 'Rating not recognised';
+//     }
+//   }
+  
 
+// console.log(calculateTip(5997, "greAt"));
+
+
+//remove all exclamation marks from the end of words
+// function remove(s){
+//     return s.split(' ').map(word => word.replace(/!*$/g, '')).join(' ');
+//   }
+  
+
+// console.log(remove("Hi! !Hi !Hi! !! hihihi!!! !hihih! !"));
+
+
+// multiTable
+// function multiTable(number) {
+//     let table = '';
+//     for (let i = 1; i <= 10; i++) {
+//         table += `${i} * ${number} = ${i * number}\n`;
+//     }
+    
+//     return table;
+// }
+
+// console.log(multiTable(5));
+
+
+//
+
+//make an array and do Fizz/Buzz/FizzBuzz
+// function between(a, b) {
+//     let array = [];
+
+//     for (let i = a; i <= b; i++) {
+//         array.push(i);
+//     }
+
+//     return array;
+// }
+
+
+// let arr = between(1, 100);
+
+
+// function fizzBuzz (arr) {
+//     let newArray = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 3 === 0 && arr[i] % 5 === 0) {
+//             newArray.push('FizzBuzz');
+//         }  
+//         else if (arr[i] % 3 === 0) {
+//             newArray.push('Fizz');
+//         } else if (arr[i] % 5 === 0) {
+//             newArray.push('Buzz');
+//         } else {
+//             newArray.push(arr[i]);
+//     }
+// }
+//     return newArray;
+// }
+
+// console.log(fizzBuzz(arr));
+
+
+// 
