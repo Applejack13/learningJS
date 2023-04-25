@@ -391,4 +391,128 @@
 // console.log(fizzBuzz(arr));
 
 
+//like chess board
+// function chess(num) {
+//     let result = '';
+//     for (let i = 0; i < num; i++) {
+//       for (let j = 0; j < num; j++) {
+//         if ((i + j) % 2 === 0) {
+//           result += ' ';
+//         } else {
+//           result += '#';
+//         }
+//       }
+//       result += '\n';
+//     }
+//     return result;
+//   }
+  
+//   console.log(chess(8));
+  
+
+// merge two sorted arrays into one
+// function mergeArrays(arr1, arr2) {
+//     let result = arr1.concat(arr2); // объединяем массивы
+//     result = result.filter((item, index) => result.indexOf(item) === index); // удаляем дубликаты
+//     result.sort((a, b) => a - b); // сортируем по возрастанию
+//     return result;
+//   }
+  
+
+// console.log(mergeArrays([1,2,3,4], [5,6,7,8]));
+
+
+//spongMeme font
+// function spongeMeme(sentence) {
+//     let newSentence = '';
+//     for (let i = 0; i < sentence.length; i++) {
+//       if (i % 2 === 0) {
+//         newSentence += sentence[i].toUpperCase();
+//       } else {
+//         newSentence += sentence[i].toLowerCase();
+//       }
+//     }
+//     return newSentence;
+//   }
+  
+
+// console.log(spongeMeme("don't do this!"));
+
+
+//not finished
+// function fuelPrice(litres, pricePerLitre) {
+//     let discount = Math.min(Math.floor(litres / 2) * 0.05, 0.25);
+//     let totalCost = (litres * pricePerLitre) - (litres * discount);
+//     return totalCost.toFixed(2);
+//   }
+  
+
+// console.log(fuelPrice(8, 2.5));
+
+
+//reverse str
+// function nameShuffler(str){
+//     return str.split(' ').reverse().join(' ');
+
+//   }
+
+// console.log(nameShuffler('Andrieieshyn Vadym'));
+
+
+//pillars(it was hard!)
+// function pillars(numPill, dist, width) {
+
+//     if (numPill < 2) {
+//         return 0;
+//     } else {
+//         return (numPill - 1) * dist * 100 + (width * (numPill - 2));
+//     }
+// }
+
+// console.log(pillars(2, 20, 25));
+
+
+// sum of neighboring numbers in arr
+// function sumOfDifferences(arr) {
+
+//     if (arr.length <= 1) {
+//         return 0;
+//     } else {
+//         arr.sort((a, b) => b - a);
+//         let arrNew = 0;
+//         for (let i = 0; i < arr.length - 1; i++) {
+//             arrNew += arr[i] - arr[i + 1];
+//         }
+//         return arrNew;
+//     }
+// }
+
+// console.log(sumOfDifferences([1, 2, 10]));
+
+
 // 
+function multiply(number){
+    return number * (5 ** number.length);
+}
+
+console.log(multiply(10),250);
+
+
+//find and return numbers in str
+// function getNumberFromString(s) {
+//     let result = '';
+   
+//     for (let i = 0; i < s.length; i++) {
+    
+//         if (!isNaN(s[i]) && s[i] !== ' ') {
+//         result += s[i];
+//     } 
+// }
+
+//     return +result;
+//   }
+
+// console.log(getNumberFromString('hello to7 fdfg77d 3'));
+
+
+//
