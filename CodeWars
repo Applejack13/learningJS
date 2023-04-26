@@ -490,14 +490,6 @@
 // console.log(sumOfDifferences([1, 2, 10]));
 
 
-// 
-function multiply(number){
-    return number * (5 ** number.length);
-}
-
-console.log(multiply(10),250);
-
-
 //find and return numbers in str
 // function getNumberFromString(s) {
 //     let result = '';
@@ -513,6 +505,75 @@ console.log(multiply(10),250);
 //   }
 
 // console.log(getNumberFromString('hello to7 fdfg77d 3'));
+
+
+//draw stairs
+// function drawStairs(n) {
+//     let stairs = '';
+
+//     for (let i = 0; i < n; i++) {
+//         stairs += 'I\n';
+//         for (let j = 0; j <= i; j++) {
+//             stairs += ' ';
+//         //     for (let o = 0; o <= j; o++) {
+//         //         stairs += ' ';
+//         // }
+//     }
+// }
+//     return stairs;
+//   }
+
+// console.log(drawStairs(10));
+
+
+//radius of circle
+// function circleArea(circle){
+//     let [x, y] = circle;
+//     let r = arguments[1];
+//     let area = Math.PI * r * r;
+//     return parseFloat(area.toFixed(6));
+//   }
+  
+//   console.log(circleArea([10, 10], 30)); // 2827.433388
+
+  
+//letter counter
+// function countBs(str) {
+//     if (str === '') {
+//       return 0;
+//     } else if (str[0] === 'B' || str[0] === 'b') {
+//       return 1 + countBs(str.slice(1));
+//     } else {
+//       return countBs(str.slice(1));
+//     }
+//   }
+  
+//   console.log(countBs('Bsdkfhsdfiiv sdojsfb sdfsjbbsldkj bbblkjbbbb'));
+  
+
+//cup volume
+// function cupVolume(d1, d2, height) {
+//     let r1 = d1 / 2;
+//     let r2 = d2 / 2;
+//     let volume = (1 / 3) * Math.PI * height * (r1 ** 2 + r1 * r2 + r2 ** 2);
+//     return +volume.toFixed(2);
+//   }
+  
+// console.log(cupVolume(10, 8, 10));
+
+
+//min-max-step
+// function generateRange(min, max, step){
+//     let result = [];
+
+//     for (let i = min; i <= max;  i += step) {
+//         result.push(i);
+//     }
+
+//     return result;
+// }
+
+// console.log(generateRange(2, 10, 2));
 
 
 //
