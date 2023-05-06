@@ -576,4 +576,358 @@
 // console.log(generateRange(2, 10, 2));
 
 
+//removeExclamationMarks
+// function removeExclamationMarks(s) {
+//     let result = '';
+
+//     for (let i = 0; i < s.length; i++) {
+//         if(s[i] !== '!') {
+//             result += s[i];
+//         }
+//     }
+
+//     return result;
+// }
+
+// console.log(removeExclamationMarks("!He!llo!"));
+
+
+//endsWith method
+// function solution(str, ending) {
+//     return str.endsWith(ending);
+//   }  
+
+// console.log(solution("someone", "one"));
+
+
+// //bouncing balls?
+// function bouncingBall(h,  bounce,  window) {
+//     if(h > 0 && bounce < 1 && bounce > 0 && window < h) {
+//         return Math.round(h * bounce / window + 2); 
+//     } else {
+//         return -1;
+//     }
+
+// }
+
+// console.log(bouncingBall(3.0, 1, 1.5));
+
+// bouncing balls?
+// function bouncingBall(h, bounce, window) {
+//     if (h > 0 && bounce < 1 && bounce > 0 && window < h) {
+//         if (bounce === 1) {
+//             return -1;
+//         }
+//         return Math.ceil(Math.log(window/h)/Math.log(bounce))*2 - 1; 
+//     } else {
+//         return -1;
+//     }
+// }
+
+// console.log(bouncingBall(30.0, 0.66, 1.5));
+
+
+// sumOfArrayNumbersAndStrings
+// function sumMix(x){
+//     let sumOfArrayNumbersAndStrings = 0;
+
+//     for (let i = 0; i < x.length; i++) {
+//         if (typeof x[i] === 'string') {
+//             sumOfArrayNumbersAndStrings += parseInt(x[i]);
+//         } else if (typeof x[i] === 'number') {
+//             sumOfArrayNumbersAndStrings += x[i];
+//         }
+//     }
+
+//     return sumOfArrayNumbersAndStrings;
+// }
+
+// console.log(sumMix([9, 3, '7', '3']));
+
+
+//increment string if it finished with a number
+// function incrementString(strng) {
+//     const regex = /\d+$/;
+//     const match = strng.match(regex);
+//     if (match) {
+//       const numberStr = match[0];
+//       const number = parseInt(numberStr);
+//       const newNumber = number + 1;
+//       const newNumberStr = newNumber.toString().padStart(numberStr.length, '0');
+//       return strng.slice(0, -numberStr.length) + newNumberStr;
+//     } else {
+//       return strng + '1';
+//     }
+//   }
+
+//   console.log(incrementString("foo2ffdg0"));
+
+
+//can I build a thiangle?
+// function isTriangle(a,b,c) {
+
+//     if (a > 0 && b > 0 && c > 0) {
+//         if (a + b > c && a + c > b && b + c > a) {
+//         return true; 
+        
+//         } else {
+//             return false;
+//         }
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(isTriangle(10, 5, 8));
+
+
+//howMuchILoveYou
+// function howMuchILoveYou(petal) {
+//     const phrases = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"];
+//     const index = (petal - 1) % 6;
+//     return phrases[index];
+//   }
+  
+  
+// console.log(howMuchILoveYou(88));
+
+
+//return a new array with the strings filtered out
+// function filter_list(l) {
+//     let newList = [];
+
+//     for (let i = 0; i < l.length; i++) {
+//         if (typeof l[i] == 'number') {
+//             newList.push(l[i]);
+//         } else if (typeof l[i] == 'string') {
+//             newList;
+//         }
+//     }
+
+//     return newList;
+// }
+
+// console.log(filter_list([1,2,'a','b']));
+
+
+// find middle of numbers and return its index
+// function gimme (triplet) {
+//     let newTriplet = triplet.slice().sort((a, b) => a - b);
+
+//     let middle = newTriplet[1];
+
+//     return triplet.indexOf(middle);
+// }
+
+// console.log(gimme([5, 10, 14]));
+
+
+//sum of str like numbers
+// function sumStr(a,b) {
+//     if (a == "" && b == "") {
+//         return 0;
+//     } else {
+//         return (+a + +b).toString();
+//     }
+// }
+
+// console.log(sumStr("4", "7"));
+
+
+//recursion factorial with RangeError
+// function factorial(n) {
+//     if (n < 0 || n > 12) {
+//       throw new RangeError("Input must be between 0 and 12");
+//     }
+//     if (n === 0) {
+//       return 1;
+//     }
+//     let result = 1;
+//     for (let i = 1; i <= n; i++) {
+//       result *= i;
+//     }
+//     return result;
+//   }
+  
+
+// console.log(factorial(11));
+
+
+//add word's length into array
+// function addLength(str) {
+//     const words = str.split(' ');
+//     const result = [];
+    
+//     for (let i = 0; i < words.length; i++) {
+//       result.push(words[i] + ' ' + words[i].length);
+//     }
+  
+//     return result;
+//   }
+  
+//   console.log(addLength("You have to return word's length"));
+  
+
+//find and return only number which don't repeat
+// function stray(numbers) {
+//     let result = 0;
+    
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers.indexOf(numbers[i]) === numbers.lastIndexOf(numbers[i])) {
+//             result = numbers[i];
+//             break;
+//         }
+//     }
+    
+//     return result;
+// }
+
+// console.log(stray([17, 17, 3, 17, 17, 17, 17]));
+
+
+//the same code
+// function stray(numbers) {
+//     const nonDuplicate = numbers.find(num => numbers.indexOf(num) === numbers.lastIndexOf(num));
+//     return nonDuplicate;
+//   }
+  
+//   console.log(stray([17, 17, 3, 17, 17, 17, 17])); 
+  
+
+//difference between cube's volumes
+// const findDifference = (a, b) => Math.abs(a.reduce((acc, val) => acc * val) - b.reduce((acc, val) => acc * val));
+
+// console.log(findDifference([30,7,11], [4,23,14]));
+
+
+//investment function
+// function calculateYears(principal, interest, tax, desired) {
+//     let waitingInYears = 0;
+//     while (principal < desired) {
+//         const interestEarned = principal * interest;
+//         const taxDeducted = interestEarned * tax;
+//         principal += interestEarned - taxDeducted;
+//         waitingInYears++;
+//     }
+//     return waitingInYears;
+// }
+
+
+
+// console.log(calculateYears(1500,0.1,0.185,1200));
+
+
+//return hello + name
+// function hello(name) {
+//     name = name.toLowerCase();
+//     name = name.charAt(0).toUpperCase() + name.slice(1);
+//     if (typeof name === 'string') {
+//         return `Hello, ${name}!`;
+//     } else{
+//         return `Hello, World!`
+//     }
+// }
+
+// console.log(hello('vaDym'));
+
+
+//remove lst "!"
+// function remove (string) {
+//     if (string.endsWith("!")) {
+//         return string.slice(0, -1);
+//     } else {
+//         return false;
+//     }
+//   }
+
+// console.log(remove("Vadym!!"));
+
+
+//coupon check
+// function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
+//     const today = new Date(currentDate);
+//     const expiration = new Date(expirationDate);
+  
+//     if (enteredCode === correctCode && today <= expiration) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+  
+
+// console.log(checkCoupon('123','123','September 5, 2014','October 1, 2014'));
+
+
+//бормотание
+// function accum(str) {
+//     return str.split('')
+//       .map((c, i) => c.toUpperCase() + c.toLowerCase().repeat(i))
+//       .join('-');
+//   }
+  
+
+// console.log(accum("ZpglnRxqenU"));
+
+
+//sorting an array 
+// function solution(nums){
+//     if (nums == null) {
+//         return [];
+//     } else {
+//         return nums.sort((a, b) => a - b);
+//     }
+// }
+
+// console.log(solution([20, 2, 10]));
+
+
+//twiceAsOld
+// function twiceAsOld(dadYearsOld, sonYearsOld) {
+//     if(dadYearsOld - sonYearsOld * 2 > 0) {
+//         return dadYearsOld - sonYearsOld * 2
+//     } else {
+//         return -(dadYearsOld - sonYearsOld * 2)
+//     }
+// }
+
+// console.log(twiceAsOld(60,26));
+
+
+//DNAtoRNA
+// function DNAtoRNA(dna) {
+//     return dna.replace(/T/g, "U");}
+
+// console.log(DNAtoRNA("GCAT"));
+
+
+//find and return two highest nubers
+// function twoHighest(arr) {
+//     const uniqueValues = new Set(arr);
+//     const sortedValues = [...uniqueValues].sort((a, b) => b - a);
+//     return sortedValues.length >= 2 ? sortedValues.slice(0, 2) : sortedValues;
+//   }
+  
+
+// console.log(twoHighest([20, 48, 4, 45]));
+
+
+//delete last zeros
+// function noBoringZeros(n) {
+//     let noZeros = String(n);
+//     let lastDigit = noZeros[noZeros.length - 1];
+    
+//     while (lastDigit === '0') {
+//         noZeros = noZeros.slice(0, -1);
+//         lastDigit = noZeros[noZeros.length - 1];
+//     }
+    
+//     return Number(noZeros);
+// }
+
+// console.log(noBoringZeros(45680));
+
+
 //
+  
+  
