@@ -928,6 +928,329 @@
 // console.log(noBoringZeros(45680));
 
 
+//Testing 1-2-3 ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
+// var number=function(array){
+//     let newArray = [];
+
+//     for (let i = 0; i < array.length; i++) {
+//         newArray.push(i + 1 + ": " +  array[i]);
+//     }
+
+//     return newArray;
+// }
+
+// console.log(number(["a", "b", "c"]));
+
+
+//get middle letter
+// function getMiddle(s) {
+//     let middleIndex = Math.floor(s.length / 2);
+//     if (s.length % 2 == 0) {
+//       return s[middleIndex - 1] + s[middleIndex];
+//     } else {
+//       return s[middleIndex];
+//     }
+//   }
+  
+
+// console.log(getMiddle("testing"));
+
+
+//regular expression for finding and deleting some letters
+// function disemvowel(str) {
+//     return str.replace(/[aeiouAUIOE]/g, '');
+//   }
+
+// console.log(disemvowel("Hello, your website is bullshit!"));
+
+
+//unusualFive
+// function unusualFive() {
+//     let name = "Vadym";
+//     return name.length;
+//   }
+
+// console.log(unusualFive());
+
+
+//is the numbers enough small to limit
+// function smallEnough(a, limit){
+//     return a.every(element => element <= limit);
+// }
+
+//or
+
+// function smallEnough(a, limit){
+//     return Math.max(...a) <= limit
+//   }
+  
+
+
+// console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 500));
+
+
+//exam grade
+// function checkExam(array1, array2) {
+//     let grade = 0;
+
+//     for (let i = 0; i < array1.length; i++) {
+//         if (array2[i] === "") { 
+//             grade += 0;
+//         } else if (array1[i] === array2[i]) {
+//             grade += 4;
+//         } else {
+//             grade -= 1;
+//         }
+//     }
+    
+//     return grade < 0 ? 0 : grade; 
+// }
+
+// console.log(checkExam(["a", "a", "c", "b"], ["a", "a", "b",  ""]));
+
+
+//reverse string
+// function reverse(string){
+//  return string.split(' ').reverse().join(' ');
+// }
+
+// console.log(reverse("Hello, Vadym"));
+
+
+//get only even numbers
+// function getEvenNumbers(numbersArray){
+//     let newArray = [];
+
+//     for (let i = 0; i < numbersArray.length; i++) {
+//         if (numbersArray[i] % 2 == 0) {
+//             newArray.push(numbersArray[i]);
+//         }
+//     }
+
+//     return newArray;
+// }
+
+//or?
+
+// function getEvenNumbers(numbersArray) {
+//     return numbersArray.filter(number => number % 2 === 0);
+// }
+
+// console.log(getEvenNumbers([2, 4, 6, 5, 8]));
+
+
+//population growth
+// function nbYear(p0, percent, aug, p) {
+//     var count = 0;
+//     while (p0 < p) {
+//       p0 = Math.floor((1 + percent / 100) * p0 + aug);
+//       count++
+//     } 
+//     return count;
+//   }
+
+// console.log(nbYear(1000, 2, 50, 1200));
+
+
+//multipleOfIndex
+// function multipleOfIndex(array) {
+//     let res = [];
+    
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] % i == 0) {
+//             res.push(array[i]);
+//         }
+//     }
+
+//     return res;
+//   }
+
+//   console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]));
+
+
+//999 --> 4 (because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, and finally 1*2 = 2)
+// function persistence(num) {
+//     let count = 0;
+//     while(num >= 10) {
+//         num = multiplyDigits(num);
+//         count ++;
+//     }
+
+//     return count;
+// }
+
+// function multiplyDigits (num) {
+//     return num.toString().split('').reduce((a, b) => a * b, 1);
+// }
+
+// console.log(persistence(39));
+
+
+//binary array to number
+// const binaryArrayToNumber = arr => {
+//     return parseInt(arr.join(''), 2);
+// };
+
+// console.log(binaryArrayToNumber([1, 1, 1, 1]));
+
+
+//find uniq num
+// function findUniq(arr) {
+//     const sortedArr = arr.sort((a, b) => a - b);
+//     return sortedArr[0] === sortedArr[1] ? sortedArr[arr.length - 1] : sortedArr[0];
+//   }
+
+// console.log(findUniq([0, 0, 0.55, 0, 0])); 
+  
+
+//remove smallest one time
+// function removeSmallest(arr) {
+//     const minIndex = arr.indexOf(Math.min(...arr));
+//     return arr.filter((_, index) => index !== minIndex);
+//   }
+  
+// console.log(removeSmallest([1,1,2,3,4,1,5,6]));
+
+
+//sorting number from max to min
+// function descendingOrder(n) {
+//     const digits = String(n).split('');
+//     const sortedDigits = digits.sort((a, b) => b - a);
+//     return Number(sortedDigits.join(''));
+//   }
+    
+// console.log(descendingOrder(123489));
+
+
+//min value without duplicates
+// function minValue(values){
+//     values.sort((a, b) => a - b);
+
+//     let result = values.filter((value, index, self) => {
+//         return self.indexOf(value) === index;
+//       });
+
+//     return parseInt(result.join(''));
+// }
+
+// console.log(minValue([1, 6, 7, 6, 7]));
+
+
+//adding two strings and delete duplicates
+// function longest(s1, s2) {
+//     const combinedString = s1 + s2;
+//     const uniqueCharacters = [...new Set(combinedString)];
+//     return uniqueCharacters.sort().join('');
+//   }
+  
+// console.log(longest("aretheyhere", "yestheyarehere"));
+
+
+//alphabet
+// function position(letter){
+//     switch(letter) {
+//         case 'a': return "Position of alphabet: 1";
+//         case 'b': return "Position of alphabet: 2";
+//         case 'c': return "Position of alphabet: 3";
+//         case 'd': return "Position of alphabet: 4";
+//         case 'e': return "Position of alphabet: 5";
+//         case 'f': return "Position of alphabet: 6";
+//         case 'g': return "Position of alphabet: 7";
+//         case 'h': return "Position of alphabet: 8";
+//         case 'i': return "Position of alphabet: 9";
+//         case 'j': return "Position of alphabet: 10";
+//         case 'k': return "Position of alphabet: 11";
+//         case 'l': return "Position of alphabet: 12";
+//         case 'm': return "Position of alphabet: 13";
+//         case 'n': return "Position of alphabet: 14";
+//         case 'o': return "Position of alphabet: 15";
+//         case 'p': return "Position of alphabet: 16";
+//         case 'q': return "Position of alphabet: 17";
+//         case 'r': return "Position of alphabet: 18";
+//         case 's': return "Position of alphabet: 19";
+//         case 't': return "Position of alphabet: 20";
+//         case 'u': return "Position of alphabet: 21";
+//         case 'v': return "Position of alphabet: 22";
+//         case 'w': return "Position of alphabet: 23";
+//         case 'x': return "Position of alphabet: 24";
+//         case 'y': return "Position of alphabet: 25";
+//         case 'z': return "Position of alphabet: 26";
+//     }
+// }
+
+
+//reverse words
+// function reverseWords(str) {  
+//     return str.split(' ').map(word => word.split('').reverse().join('')).join(' ');
+// }
+
+// console.log(reverseWords("Hello there"));
+
+
+//hex to dec
+// function hexToDec(hexString){
+//     return parseInt(hexString, 16);
+// }
+
+// console.log(hexToDec("a"));
+
+
+//say hello
+// function sayHello( name, city, state ) {
+//     // name = name.toString().replace(/,/g, ' '); = like join(' ');
+//     return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+// }
+
+// console.log(sayHello(['John', 'Smith'], 'Phoenix', 'Arizona'));
+
+
 //
-  
-  
+// function validatePIN(pin) {
+//     if ((pin > 0) && (pin.length === 4 || pin.length === 6) && (!isNaN(parseInt(pin)))) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+// };
+
+// console.log(validatePIN('66a7'));
+
+
+//is PIN validate?
+// function validatePIN (pin) {
+//     if((/^[0-9]+$/).test(pin) && pin.length == 4 || (/^[0-9]+$/).test(pin) && pin.length == 6) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(validatePIN('664217'));
+
+
+//intefrate
+// function integrate(coefficient, exponent) {
+//     exponent = exponent + 1;
+//     return `${coefficient / exponent}^x${exponent}`
+// }
+
+// console.log(integrate(20, 1));
+
+
+//sum of even nunumbers from 0 to n
+// function oddCount(n){
+//     return Math.floor(n / 2);
+// }
+
+// console.log(oddCount(15023));
+
+
+// remove first and last elements
+// function array(string) {
+//     return string.split(',').slice(1, -1).join(' ') || null;
+// }
+
+// console.log(array('A1,B2,C3'));
+
+
+//
