@@ -1253,4 +1253,100 @@
 // console.log(array('A1,B2,C3'));
 
 
+//add some arrays
+// function flattenAndSort(array) {
+//     const mergedArray = [].concat(...array);
+//     return mergedArray.sort((a, b) => a - b);
+// }
+
+// console.log(flattenAndSort([[3, 2, 1], [7, 9, 8], [6, 4, 5]]));
+
+
+//username validator
+// function validateUsr(username) {
+//     var res = /^[a-z0-9_]{4,16}$/.test(username);
+//     return res;
+//   }  
+
+// console.log(validateUsr('R5_t35'));
+
+
+//
+// function index(array, n) {
+//     if (n >= 0 && n < array.length) {
+//       return Math.pow(array[n], n);
+//     }
+//     return -1; 
+//   }
+  
+
+//
+// function defineSuit(card) {
+//     if (card.includes("♣")) {
+//       return 'clubs';
+//     } else if (card.includes("♦")) {
+//       return 'diamonds';
+//     } else if (card.includes("♥")) {
+//       return 'hearts';
+//     } else if (card.includes("♠")) {
+//       return 'spades';
+//     }
+//   }
+
+// console.log(defineSuit("Q♠"));
+
+
+//password validator
+// const REGEXP = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z0-9]{6,}$/;
+
+
+//remove exclemation marks in the end of string
+// function remove(string) {  
+//     return string.replace(/!+$/, '');
+// }
+
+// console.log(remove("!Hi!!"));
+
+
+// sum of multiplies
+// function sumMul(n, m) {
+//     if (n <= 0 || m <= 0) {
+//       return "n and m should be positive numbers";
+//     }
+  
+//     let res = 0;
+//     for (let i = 0; i <= m; i += n) {
+//       res += i;
+//     }
+  
+//     return res;
+//   }
+  
+// console.log(sumMul(21, 6465654));
+
+
+//
+// function binToDec(bin){
+//     return parseInt(bin, 2);
+// }  
+
+// console.log(binToDec("1001001"));
+
+
+//day of week
+// function whatday(num) {
+//     const daysOfWeek = {
+//         1: "Sunday",
+//         2: "Monday",
+//         3: "Tuesday",
+//         4: "Wednesday",
+//         5: "Thursday",
+//         6: "Friday",
+//         7: "Saturday"
+//     };
+
+//     return daysOfWeek[num] || "Wrong, please enter a number between 1 and 7";
+// }
+
+
 //
