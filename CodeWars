@@ -1349,4 +1349,24 @@
 // }
 
 
+//return next element after "item" in "xs"
+// const nextItem = (xs, item) => (xs.indexOf(item) !== -1) ? xs[xs.indexOf(item) + 1] : undefined;  
+
+// console.log(nextItem("Hello", "e"));
+ 
+
+//sum of name on billboard
+// function billboard(name, price = 30){
+//     let sum = 0;
+
+//     for (let i = 0; i < name.length; i++) {
+//         sum += price;
+//     }
+
+//     return sum;
+// } 
+
+// console.log(billboard("Vadym "));
+
+
 //
