@@ -240,3 +240,73 @@
 // Promise.race([test(1000), test(2000)]).then(() => {
 //     console.log('All');
 // });
+
+
+// array's methods
+
+//1 filter
+
+// const names = ['Ann', 'Ivan', 'Ksenia', 'Voldemart'];
+
+// const shortNames = names.filter(function(name) {
+//     return name.length < 5;
+// });
+
+// console.log(shortNames);
+
+
+//map
+//toUpperCase and return with a capital letter
+
+// const answers = ['IvAn', 'AnnA', 'Hello'];
+
+// const result = answers.map(item => item.charAt(0).toUpperCase() + item.slice(1).toLowerCase());
+
+// console.log(result);
+
+
+//every&some
+
+// const something = [5, 'sdgkjdhg1486sg', 156];
+
+// console.log(something.some(item => typeof(item) === 'number'));
+
+// console.log(something.every(item => typeof(item) === 'number'));
+
+
+//reduce
+
+// const arr = [4, 5, 1, 2, 3, 6];
+//                         // 0       4
+//                         // 4       5
+//                         // 9       1
+//                         // 10      2
+//                         // 12      3
+//                         // 15      6   
+//                         // 21
+// const res = arr.reduce((sum, current) => sum + current);
+
+// console.log(res);
+
+// const arr = ['Apple', 'Pear', 'Plum'];
+
+// const res = arr.reduce((sum, current) => `${sum}, ${current}`);
+
+// console.log(res);
+
+
+// const obj = {
+//     Ivan: 'persone',
+//     Ann: 'persone',
+//     dog: 'animal',
+//     cat: 'animal'
+// };
+
+// const newArray = Object.entries(obj)
+// .filter(i => i[1] === 'persone')
+// .map(i => i[0]);
+
+// console.log(newArray);
+
+
+//
