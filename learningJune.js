@@ -20,7 +20,7 @@
 //     this.human = true;
 //     this.hello = function () {
 //         console.log(`Hello ${this.name}`);
-//     } 
+//     }
 // }
 
 // User.prototype.exit = function () {
@@ -37,7 +37,6 @@
 
 // console.log(ivan);
 // console.log(alex);
-
 
 // function showThis(a, b) {
 //     console.log(this);
@@ -66,7 +65,7 @@
 //     this.human = true;
 //     this.hello = function () {
 //         console.log(`Hello ${this.name}`);
-//     } 
+//     }
 // }
 
 // function sayName() {
@@ -93,13 +92,12 @@
 // 1) Обычня функция: this = window, но если use strict = undefined
 // 2) Контекст у метода объектов - сам объект
 // 3) this в конструкторах и классах - это новый экземпляр объекта
-// 4) Ручгая привязка this: call, apply, bind 
-
+// 4) Ручгая привязка this: call, apply, bind
 
 // const btn = document.querySelector('button');
 
 // btn.addEventListener('click', function() {
-//     this.style.backgroundColor = 'yellow'; 
+//     this.style.backgroundColor = 'yellow';
 // });
 
 // const obj = {
@@ -112,12 +110,11 @@
 //     }
 // }
 
-// obj.sayNumber(); 
+// obj.sayNumber();
 
 // const double = a => a * 2;
 
 // console.log(double(4));
-
 
 //classes
 
@@ -141,7 +138,7 @@
 
 //     showMyProps() {
 //         console.log(`Text: ${this.text}, color: ${this.bgColor}`);
-//     } 
+//     }
 // }
 
 // const div = new ColoredRectangleWithtext(25, 10, "Hello, Vadym!", 'yellow');
@@ -155,7 +152,6 @@
 // console.log(square.calcArea());
 // console.log(long.calcArea());
 
-
 //rest/spred-operator
 // const log = function(a, b, ...rest) {
 //     console.log(a, b, rest);
@@ -168,7 +164,6 @@
 // }
 
 // calcOrDouble(2, );
-
 
 //
 //     const persone = {
@@ -187,12 +182,11 @@
 // console.log(persone);
 // console.log(clone);
 
-
 //Promises
 
 // console.log('Запрос данных...');
 
-// const req = new Promise((resolve, reject) => {    
+// const req = new Promise((resolve, reject) => {
 // setTimeout(() => {
 //     console.log('Подготовка данных...');
 //     const product =  {
@@ -223,7 +217,6 @@
 //     console.log('Finally');
 // });
 
-
 // const test = time => {
 //     return new Promise(resolve => {
 //         setTimeout(() => resolve(), time);
@@ -241,7 +234,6 @@
 //     console.log('All');
 // });
 
-
 // array's methods
 
 //1 filter
@@ -254,7 +246,6 @@
 
 // console.log(shortNames);
 
-
 //map
 //toUpperCase and return with a capital letter
 
@@ -264,7 +255,6 @@
 
 // console.log(result);
 
-
 //every&some
 
 // const something = [5, 'sdgkjdhg1486sg', 156];
@@ -272,7 +262,6 @@
 // console.log(something.some(item => typeof(item) === 'number'));
 
 // console.log(something.every(item => typeof(item) === 'number'));
-
 
 //reduce
 
@@ -282,7 +271,7 @@
 //                         // 9       1
 //                         // 10      2
 //                         // 12      3
-//                         // 15      6   
+//                         // 15      6
 //                         // 21
 // const res = arr.reduce((sum, current) => sum + current);
 
@@ -293,7 +282,6 @@
 // const res = arr.reduce((sum, current) => `${sum}, ${current}`);
 
 // console.log(res);
-
 
 // const obj = {
 //     Ivan: 'persone',
@@ -308,5 +296,77 @@
 
 // console.log(newArray);
 
+//local storage
 
-//
+// localStorage.setItem('number', 15);
+
+// localStorage.removeItem('number');
+
+// localStorage.clear();
+
+// console.log(localStorage.getItem('number'));
+
+//regular expression
+
+// new RegExp('pattern', 'flags');
+// /pattenr/flags
+
+// const ans = prompt('Enter your name');
+
+// const reg = /n/ig;
+// console.log(reg.test(ans));//true or false
+
+// const str = 'My name is R2D2';
+
+// console.log(str.match(/\w\d\w\d/i));
+
+// classes:
+
+// \d - numbers;
+// \w - words;
+// \s - spaces;
+
+// non-clases:
+
+// \D - not a numbers;
+// \W - not a words;
+// \S - not a spaces;
+
+// i - ignore register;
+// g - global;
+// m - a lot of strings
+
+// console.log(ans.search(reg));
+// console.log(ans.match(reg));
+// console.log(ans.replace(/./g, '*'));
+
+//инкапсуляция
+
+// class User {
+//     constructor(name, age) {
+//         this.name = name;
+//         this._age = age;
+//     }
+
+//     say() {
+//         console.log(`Name of user ${this.name}, age ${this.userAge}`);
+//     }
+
+//     get age() {
+//         return this._age;
+//     }
+
+//     set age(age) {
+//         if (typeof age === 'number' && age > 0 & age < 100) {
+//             this._age = age;
+//         } else {
+//             console.log('Недопустимое значение');
+//         }
+//     }
+// }
+
+// const ivan = new User("Ivan", 27);
+// console.log(ivan.age);
+// ivan.age = 99;
+// console.log(ivan.age);
+// ivan.say();

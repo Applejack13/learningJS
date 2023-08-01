@@ -1,12 +1,10 @@
-"use sctict";
+"use sctict"
 
 // if (4 == 9) {
 //     console.log('Ok!');
 // } else {
 //     console.log('Error');
 // }
-
-
 
 // // if (num < 49) {
 // //     console.log('Error!');
@@ -17,7 +15,6 @@
 // // }
 
 // // (num === 50) ? console.log('Ok!') : console.log('Error!');
-
 
 // const num = 50;
 
@@ -36,16 +33,12 @@
 //     break;
 // }
 
-
-
-
 // let hamburger = 5;
 // let fries = 0;
 
 // if (hamburger && fries) {
 //     console.log("I'm full")
 // };
-
 
 // const hamburger = 3;
 // const fries = 12;
@@ -64,7 +57,6 @@
 //     console.log("We'll leave")
 // };
 
-
 // const hamburger = 3;
 // const fries = 3;
 // const cola = 0;
@@ -78,7 +70,6 @@
 //     console.log("We'll leave")
 // };
 
-
 // let num = 50;
 
 // // while (num < 55) {
@@ -89,14 +80,14 @@
 // // do {
 // //     console.log(num);
 // //     num++;
-// // } 
+// // }
 // // while (num < 55);
 
 // for (let i = 0; i < 3; i++) {
 //     console.log(i);
 //     for (let j = 0; j < 3; j++) {
 //         console.log(j);
-        
+
 //     }
 // }
 
@@ -104,7 +95,7 @@
 // const length = 44;
 
 // for (let i = 1; i < length; i++) {
-    
+
 //     for (let j = 0; j < i; j++) {
 //         result += '*';
 //     }
@@ -114,18 +105,16 @@
 
 // console.log(result);
 
-
 // first: for (let i = 0; i < 3; i++) {
 //     console.log(`First level: ${i}`);
 //     for (let j = 0; j < 3; j++) {
-//         console.log(`Second level: ${j}`);  
+//         console.log(`Second level: ${j}`);
 //         for (let k = 0; k < 5; k++) {
-//             if (k === 2) continue first; 
-//             console.log(`Third level: ${k}`);  
+//             if (k === 2) continue first;
+//             console.log(`Third level: ${k}`);
 //         }
 //     }
 // }
-
 
 // let num = 20;
 
@@ -144,7 +133,7 @@
 // // console.log(calc (4, 3));
 // // console.log(calc (5, 6));
 
-// //function declaration 
+// //function declaration
 // function ret() {
 //     let num = 50;
 //     return num;
@@ -153,16 +142,15 @@
 // const anotherNum = ret();
 // console.log(anotherNum);
 
-// // function expression 
+// // function expression
 // const logger = function() {
 //     console.log('Hello');
 // };
 
 // logger();
 
-// // line function 
+// // line function
 // const calc = (a, b) => a + b;
-
 
 // const usdCurr = 28;
 // const eurCurr = 32;
@@ -190,7 +178,6 @@
 
 // function doNothing() {}
 // console.log(doNothing() === undefined);
-
 
 // first task
 // const name = "Vadym";
@@ -233,7 +220,6 @@
 
 // console.log(getMathResult(11, 8));
 
-
 // // Место для первой задачи
 // function firstTask() {
 //     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
@@ -243,12 +229,11 @@
 //     // Пишем решение вот тут
 // for (let i = 0; i < arr.length; i++) {
 //     result[i] = arr[i];
-// }    
+// }
 //     // Не трогаем
 //     console.log(result);
 //     return result;
 // }
-
 
 // // Место для второй задачи
 // function secondTask() {
@@ -256,14 +241,11 @@
 //     const data = [5, 10, 'Shopping', 20, 'Homework'];
 
 //     // Пишем решение вот тут
-    
-    
+
 //     // Не трогаем
 //     console.log(data);
 //     return data;
 // }
-
-
 
 // function thirdTask() {
 //     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
@@ -274,12 +256,11 @@
 //     for (let i = 0; i <= data.length ;i++) {
 //         result[i - 1] = data[data.length - i];
 //     }
-    
+
 //     // Не трогаем
 //     console.log(result);
 //     return result;
 // }
-
 
 // build a tree:
 // let result = '';
@@ -298,7 +279,6 @@
 
 // console.log(result);
 
-
 // // volume and area of ​​a cube
 
 // function calculateVolumeAndArea(length) {
@@ -308,15 +288,14 @@
 
 //     let volume = 0,
 //         area = 0;
-        
+
 //         volume = length * length * length;
 //         area = 6 * (length * length);
-    
+
 //     return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
 // }
 
 // calculateVolumeAndArea(11);
-
 
 // // tickets code
 // function getCoupeNumber(num) {
@@ -328,11 +307,10 @@
 //         return "Таких мест в вагоне не существует";
 //     }
 
-//     return Math.ceil(num / 4);    
+//     return Math.ceil(num / 4);
 // }
 
 // getCoupeNumber(4);
-
 
 // function first() {
 //     setTimeout(function() {
@@ -356,9 +334,8 @@
 //     console.log("I finished this lesson")
 // });
 
-
 // const options = {
-//     name : 'test',   
+//     name : 'test',
 //     width: 1024,
 //     height: 1024,
 //     colors: {
@@ -382,7 +359,6 @@
 
 // let counter = 0;
 
-
 // for (let key in options) {
 //     if (typeof(options[key]) === 'object') {
 //        for (let i in options[key]) {
@@ -397,11 +373,10 @@
 
 // console.log(counter);
 
-
 // const arr = [1, 2, 3, 4, 5];
 
 // arr.sort(compareNum);
-// console.log(arr); 
+// console.log(arr);
 
 // function compareNum(a, b) {
 //     return a - b;
@@ -409,8 +384,6 @@
 
 // arr[99] = 0;
 // console.log(arr.length);
-
-
 
 // arr.pop();
 // arr.push(10)
@@ -430,7 +403,6 @@
 // products.sort();
 // console.log(products.join('; '));
 
-
 //trying to do the task with arr.(not finished)
 // const personalPlanPeter = {
 //     name: "Peter",
@@ -444,7 +416,6 @@
 //         exp: '1 month'
 //     }
 // };
-
 
 // function showExperience(plan) {
 //     const {age} = plan;
@@ -462,11 +433,10 @@
 
 // function showExperience(plan) {
 //     const {exp} = plan.skills;
-//     return exp; 
+//     return exp;
 // }
 
 // showExperience();
-
 
 // function getTimeFromMinutes(time) {
 //     if (!Number.isInteger(time) || typeof(time) !== 'number' || time < 0) {
@@ -475,7 +445,7 @@
 //     }
 
 //     const hours = Math.floor(time / 60);
-//     const minutes = time % 60;  
+//     const minutes = time % 60;
 
 //     let hoursStr = '';
 
@@ -498,9 +468,7 @@
 //     return `Это ${hours} ${hoursStr} и ${minutes} минут`;
 // }
 
-
 // getTimeFromMinutes(1400);
-
 
 // function findMaxNumber(a, b, c, d) {
 //     if (typeof(a) !== 'number' ||
@@ -520,7 +488,7 @@
 //     armor: 100
 // };
 
-// const john = Object.create(soldier); 
+// const john = Object.create(soldier);
 
 // const john = {
 //     healht: 100
@@ -532,7 +500,6 @@
 // Object.setPrototypeOf(john, soldier);
 
 // console.log(john.armor);
-
 
 //fibonacci-numbers
 
@@ -562,7 +529,6 @@
 
 // fib(13);
 
-
 // let number = 5; debugger
 
 // function logNumber() {
@@ -574,7 +540,6 @@
 
 // logNumber(); debugger
 
-
 // function createCounter() {
 //     let counter = 0;
 
@@ -585,14 +550,13 @@
 
 //     return myFunction;
 // }
-// debugger 
+// debugger
 // const increment = createCounter(); debugger
 // const c1 = increment(); debugger
 // const c2 = increment(); debugger
 // const c3 = increment(); debugger
 
 // console.log(c1, c2, c3);
-
 
 // const restorantData = {
 //     menu: [
@@ -629,7 +593,6 @@
 
 // console.log(isOpen(restorantData.openNow)); // Выведет "Открыто"
 
-
 // function isAverageLunchPriceTrue(fDish, sDish, average) {
 //     if (+fDish.price.slice(0, -1) + (+sDish.price.slice(0, -1)) < +average.slice(0, -1)) {
 //         return 'Цена ниже средней';
@@ -639,7 +602,6 @@
 // }
 
 // console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
-
 
 // function transferWaitors(data) {
 //     const copy = Object.assign({}, data);
@@ -658,9 +620,8 @@
 //     }
 //     return result;
 //   }
-  
+
 //   repeatString('HA', '55');
-  
 
 // function calculate(x, y, operator) {
 //     x = parseInt(x);
@@ -671,7 +632,7 @@
 //     } else if (operator == '/') {
 //         return x / y;
 //     } else if (operator == '-') {
-//         return x - y; 
+//         return x - y;
 //     } else if (operator == '+') {
 //         return x + y;
 //     }
@@ -680,7 +641,6 @@
 // }
 
 // console.log(calculate(44, 5, '+'));
-
 
 // const arr = [464654, 6548484164, 4644, 684984684654, 44989765]
 
@@ -692,7 +652,6 @@
 // }
 
 // console.log(maxNum(arr));
-
 
 // function isPalindrome(str) {
 //     let check = '';
@@ -708,20 +667,17 @@
 
 // console.log(isPalindrome('racecar'));
 
-
-// factorial 
+// factorial
 // function factorial(n) {
 //     let result = 1;
 //     while (n) {
 //         result *= n--;
 //     }
-    
+
 //     return result;
 // }
 
 // console.log(factorial(3));
-
-
 
 // function isPrime(n) {
 //     if (n <= 1) {
@@ -739,10 +695,8 @@
 
 // console.log(isPrime(10));
 
-
-const btns = document.querySelectorAll('button'),
-      overlay = document.querySelector('.overlay');
-
+const btns = document.querySelectorAll("button"),
+  overlay = document.querySelector(".overlay")
 
 // btn.onclick = function() {
 //     alert("It's working");
@@ -754,33 +708,32 @@ const btns = document.querySelectorAll('button'),
 
 // let i = 0;
 const deleteElement = (e) => {
-    console.log(e.currentTarget);
-    console.log(e.type);
-    // e.target.remove();
-    // alert("It's working");
-    // i++;
-    // if (i == 1) {
-    //     btn.removeEventListener('click', deleteElement);
-    // }
-};
+  console.log(e.currentTarget)
+  console.log(e.type)
+  // e.target.remove();
+  // alert("It's working");
+  // i++;
+  // if (i == 1) {
+  //     btn.removeEventListener('click', deleteElement);
+  // }
+}
 
 // btn.addEventListener('click', deleteElement);
 // overlay.addEventListener('click', deleteElement);
 
-btns.forEach(btn => {
-    btn.addEventListener('click', deleteElement, {once: true});
-});
+btns.forEach((btn) => {
+  btn.addEventListener("click", deleteElement, { once: true })
+})
 
-const link = document.querySelector('a');
+const link = document.querySelector("a")
 
-link.addEventListener('click' , (event) => {
-    event.preventDefault();
+link.addEventListener("click", (event) => {
+  event.preventDefault()
 
-    console.log(event.target);
-});
+  console.log(event.target)
+})
 
-
-// console.log(document.body); 
+// console.log(document.body);
 // console.log(document.documentElement);
 // console.log(document.body.childNodes);
 // console.log(document.body.firstChild);
@@ -797,7 +750,6 @@ link.addEventListener('click' , (event) => {
 //     console.log(node);
 // }
 
-
 // const arr = [2, 3, 4, 5, 6, 8, 10, 14];
 
 // function squareOfNumbers(arr) {
@@ -809,19 +761,17 @@ link.addEventListener('click' , (event) => {
 // console.log(squareOfNumbers(arr));
 // Output: [4, 9, 16, 25, 36, 64, 100, 196]
 
-
 // const arr3 = ['milk', 'juice', 'apples', 'cereal', 'tomatoe', 'bread'];
 
 // function arrToUpperCase() {
 //     const result = [];
 //     arr3.forEach(element => result.push(element.toUpperCase()));
-    
+
 //     return result;
 
 // }
 
 // console.log(arrToUpperCase());
-
 
 // function pow(x, n) {
 //     let result = 1;
@@ -841,10 +791,9 @@ link.addEventListener('click' , (event) => {
 //     }
 // }
 
-
 // console.log(pow(2, 2));
 // pow(2, 3);
-// pow(2, 4);  
+// pow(2, 4);
 
 // let students = {
 //     js: [{
@@ -866,7 +815,7 @@ link.addEventListener('click' , (event) => {
 
 //         pro: [{
 //             name: 'Sam',
-//             progress: 10  
+//             progress: 10
 //         }]
 //     }
 // };
@@ -887,7 +836,7 @@ link.addEventListener('click' , (event) => {
 //                 students += subCourse.length;
 
 //                 for (let i = 0; i < subCourse.length; i++) {
-//                     total += subCourse[i].progress;    
+//                     total += subCourse[i].progress;
 //             }
 //         }
 //     }
@@ -896,9 +845,7 @@ link.addEventListener('click' , (event) => {
 //     return total / students;
 // }
 
-
 // console.log(getTotalProgressByItaration(students));
-
 
 // function getTotalProgressByrecursion (data) {
 //     if (Array.isArray(data)) {
@@ -926,7 +873,6 @@ link.addEventListener('click' , (event) => {
 
 // console.log(result[0]/result[1]);
 
-
 //factorial with using recursion
 // function factorialWithRecursion(num) {
 //     if (num < 0) {
@@ -939,9 +885,8 @@ link.addEventListener('click' , (event) => {
 //       return num * factorialWithRecursion(num - 1);
 //     }
 //   };
-  
-// console.log(factorialWithRecursion(5));
 
+// console.log(factorialWithRecursion(5));
 
 //factorial
 // function factorial(n) {
@@ -949,36 +894,34 @@ link.addEventListener('click' , (event) => {
 //     while (n) {
 //         result *= n--;
 //     }
-    
+
 //     return result;
 // }
 
 // console.log(factorial(6));
 
-
 // Click on touchscreens
-window.addEventListener('DOMContentLoaded', () => {
-    const box = document.querySelector('.box');
+window.addEventListener("DOMContentLoaded", () => {
+  const box = document.querySelector(".box")
 
-    box.addEventListener('touchstart', (e) =>{
-        e.preventDefault();
+  box.addEventListener("touchstart", (e) => {
+    e.preventDefault()
 
-        console.log('Start');
-    });
-    
-    box.addEventListener('touchmove', (e) =>{
-        e.preventDefault();
+    console.log("Start")
+  })
 
-        console.log('Move');
-    });
-    
-    box.addEventListener('touchend', (e) =>{
-        e.preventDefault();
+  box.addEventListener("touchmove", (e) => {
+    e.preventDefault()
 
-        console.log('End');
-    });
-});
+    console.log("Move")
+  })
 
+  box.addEventListener("touchend", (e) => {
+    e.preventDefault()
+
+    console.log("End")
+  })
+})
 
 // const shops = [
 //     {rice: 500},
@@ -995,7 +938,6 @@ window.addEventListener('DOMContentLoaded', () => {
 // shops.forEach((shop, i) => {
 //     map.set(shop, budget[i])
 // });
-
 
 // console.log(map);
 // console.log(map.get(shops[0]));
@@ -1026,8 +968,8 @@ window.addEventListener('DOMContentLoaded', () => {
 // console.log(bigint);
 // console.log(samebigint);
 
-const newButtons = document.querySelectorAll('button'),
-      newWrapper = document.querySelector('.wrapper');
+const newButtons = document.querySelectorAll("button"),
+  newWrapper = document.querySelector(".wrapper")
 
 // console.log(newButtons[4].classList.length);
 // console.log(newButtons[1].classList.item(0));
@@ -1039,20 +981,20 @@ const newButtons = document.querySelectorAll('button'),
 //     console.log('red');
 // }
 
-newButtons[0].addEventListener('click', () => {
-    // if (!newButtons[1].classList.contains('red')) {
-    //     newButtons[1].classList.add('red');
-    // } else {
-    //     newButtons[1].classList.remove('red');
-    // }
-    newButtons[1].classList.toggle('red');
-});
+newButtons[0].addEventListener("click", () => {
+  // if (!newButtons[1].classList.contains('red')) {
+  //     newButtons[1].classList.add('red');
+  // } else {
+  //     newButtons[1].classList.remove('red');
+  // }
+  newButtons[1].classList.toggle("red")
+})
 
-newWrapper.addEventListener('click', (e) =>{
-    if (e.target && e.target.matches('button.red')) {
-        console.log('Hello');
-    }
-});
+newWrapper.addEventListener("click", (e) => {
+  if (e.target && e.target.matches("button.red")) {
+    console.log("Hello")
+  }
+})
 
 // newButtons.forEach(createNewBtns => {
 //     createNewBtns.addEventListener('click', () => {
@@ -1060,10 +1002,9 @@ newWrapper.addEventListener('click', (e) =>{
 //     });
 // });
 
-const createNewBtns = document.createElement('button');
-createNewBtns.classList.add('red');
-newWrapper.append(createNewBtns);
-
+const createNewBtns = document.createElement("button")
+createNewBtns.classList.add("red")
+newWrapper.append(createNewBtns)
 
 // const btn = document.querySelector('.btn');
 // let timerId,
@@ -1072,7 +1013,6 @@ newWrapper.append(createNewBtns);
 //     // const timerId = setTimeout(logger, 2000);
 //     timerId = setInterval(logger, 2000);
 // });
-
 
 // function logger() {
 //     if (j === 3) {
@@ -1088,10 +1028,9 @@ newWrapper.append(createNewBtns);
 //     id = setTimeout(log, 500);
 // }, 500);
 
-
 // function bmi(weight, height) {
-//     var result = weight/Math.pow(height,2) 
-    
+//     var result = weight/Math.pow(height,2)
+
 //     if (result <= 18.5) {
 //       return "Underweight";
 //     } else if (result <= 25) {
@@ -1101,7 +1040,7 @@ newWrapper.append(createNewBtns);
 //     } else {
 //       return "Obese";
 //     }
-    
+
 //   }
 
 // // function which count dogs and cats years
@@ -1109,9 +1048,8 @@ newWrapper.append(createNewBtns);
 //     catYears,
 //     dogYears;
 
-
 // var humanYearsCatYearsDogYears = function(humanYears) {
-    
+
 //     if (Number.isInteger(humanYears) && humanYears == 1) {
 //         catYears = 15;
 //         dogYears = 15;
@@ -1127,15 +1065,13 @@ newWrapper.append(createNewBtns);
 
 //     return [humanYears, catYears, dogYears];
 //   };
-  
 
 // //sheep counter
 // function countSheep(num) {
 //     return Array.from({ length: num }, (_, i) => `${i + 1} sheep...`).join('');
 //   }
-  
+
 //   console.log(countSheep(44));
-  
 
 // //fraffic light function
 // function updateLight(current) {
@@ -1152,7 +1088,6 @@ newWrapper.append(createNewBtns);
 
 //   console.log(updateLight('black'));
 
-
 // function sumEvenNumbers(input) {
 //     let result = 0;
 
@@ -1164,7 +1099,6 @@ newWrapper.append(createNewBtns);
 //     }
 //     return result;
 // };
-
 
 //oppozite number
 // function opposite(number) {
@@ -1179,19 +1113,17 @@ newWrapper.append(createNewBtns);
 
 // console.log(opposite(0));
 
-
 // function noSpace(x){
 //     let spaceDelete = x.trim();
 //     return spaceDelete;
 // }
-
 
 //delete all spaces
 // function noSpace(x){
 //     let spaceDelete = x.trim();
 //     return spaceDelete.replace(/\s+/g, '');
 //   }
-  
+
 //find the element in arr
 // function findNeedle(haystack) {
 //     let result = haystack.indexOf('needle');
@@ -1203,14 +1135,13 @@ newWrapper.append(createNewBtns);
 //         return array.map(x => -x);
 //       }
 
-
 //sum of numbers from 0 to num
 // var summation = function (num) {
 //     let result = 0;
 
 //     if (Number.isInteger(num) && num > 0) {
 //     for (let i = 1; i <= num; i++) {
-//         result += i; 
+//         result += i;
 //         }
 //     } else {
 //         return  'Error';
@@ -1220,7 +1151,6 @@ newWrapper.append(createNewBtns);
 
 // console.log(summation(8));
 
-
 //reverse srt
 // function solution(str){
 //     let reverseStr = str.split("").reverse().join("");
@@ -1229,12 +1159,11 @@ newWrapper.append(createNewBtns);
 
 // console.log(solution("Hello!"));
 
-
 // move Zero to end of arr
 // function moveZeros(arr) {
 //     let zeros = [],
 //         noZeros = [];
-    
+
 //     for (let i = 0; i < arr.length; i++) {
 //         if (arr[i] === 0) {
 //             zeros.push(arr[i]);
@@ -1246,13 +1175,11 @@ newWrapper.append(createNewBtns);
 //     return [...noZeros, ...zeros];
 //   }
 
-
 //year to century
 // function century(year) {
 //     return Math.ceil(year/100);
 // }
 // console.log(century(1116));
-
 
 //sum of numbers from a to b
 // function getSum(a, b) {
@@ -1260,7 +1187,7 @@ newWrapper.append(createNewBtns);
 
 //     if (a <= b) {
 //         for (let i = a; i <= b; i++) {
-//             arr += i; 
+//             arr += i;
 //         }
 //     } else {
 //         for (let i = b; i <= a; i++) {
@@ -1273,7 +1200,6 @@ newWrapper.append(createNewBtns);
 
 // console.log(getSum(314, 540));
 
-
 //max and min number
 // var min = function(list){
 //     let maxNum = Math.max(...list);
@@ -1283,21 +1209,19 @@ newWrapper.append(createNewBtns);
 
 // var max = function(list){
 //     let minNum = Math.min(...list);
-    
+
 //     return minNum;
 // }
 
-
 //sum of 2 min numbers
-// function sumTwoSmallestNumbers(numbers) {  
+// function sumTwoSmallestNumbers(numbers) {
 //     if(Array.isArray(numbers) && numbers.length >= 2) {
 //         const sortedNumbers = [...numbers].sort((a, b) => a - b);
-//         return sortedNumbers[0] + sortedNumbers[1]; 
+//         return sortedNumbers[0] + sortedNumbers[1];
 //     }
 
 //     return null;
 // };
-
 
 //compares the number of characters
 // function XO(str) {
@@ -1315,14 +1239,12 @@ newWrapper.append(createNewBtns);
 //     return countO === countX;
 // };
 
-
 //the same function
 // function XO(str) {
 //     return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;
 // }
 
 // console.log(XO('xoxoxoxodogsdgoxozoxxxxxxosdgjdog'));
-
 
 // return reverse str
 // function reverseWords(str){
@@ -1331,24 +1253,22 @@ newWrapper.append(createNewBtns);
 
 // console.log(reverseWords("This is my first function"));
 
-
 //JadenCase format
 // String.prototype.toJadenCase = function() {
 //     let words = this.split(' ');
-  
+
 //     for (let i = 0; i < words.length; i++) {
 //       words[i] = words[i][0].toUpperCase() + words[i].slice(1);
 //     }
-  
+
 //     return words.join(' ');
 //   };
-
 
 //dividing array to 2 sum of numbers
 // function twoTeams(arr) {
 //     let team1 = 0;
 //     let team2 = 0;
-  
+
 //     for (let i = 0; i < arr.length; i++) {
 //       if (i % 2 === 0) {
 //         team1 += arr[i];
@@ -1356,26 +1276,24 @@ newWrapper.append(createNewBtns);
 //         team2 += arr[i];
 //       }
 //     }
-  
+
 //     return [team1, team2];
 //   }
-  
+
 //   console.log(twoTeams([1, 2, 3, 4, 5, 6])); // [9, 6]
-  
 
 //square of sum of numbers
 // function squareSum(numbers){
 //     let result = 0;
 
 //     for(let i = 0; i < numbers.length; i++) {
-//         result += numbers[i] ** 2;    
+//         result += numbers[i] ** 2;
 //     }
 
 //     return result;
 // }
 
-// console.log(squareSum([3, 2, 5])); 
-
+// console.log(squareSum([3, 2, 5]));
 
 //add 2 numbers without '+'
 // function add(a, b) {
@@ -1385,25 +1303,23 @@ newWrapper.append(createNewBtns);
 //       return add(a ^ b, (a & b) << 1);
 //     }
 //   }
-  
+
 //   console.log(add(5, 3)); // Output: 8
-  
 
 //checking '!' in str
 // function removeWordsWithOneExclamation(sentence) {
 //     let words = sentence.split(" ");
 //     let result = [];
-  
+
 //     for (let i = 0; i < words.length; i++) {
 //       let word = words[i];
 //       if (word.split("!").length - 1 !== 1) {
 //         result.push(word);
 //       }
 //     }
-  
+
 //     return result.join(" ");
 //   }
-
 
 //
 
@@ -1447,5 +1363,94 @@ newWrapper.append(createNewBtns);
 //     return tranformedArray.every(film => film.id || film.id === 0 ? true : false);
 // }
 
+//
+// const personalPlanPeter = {
+//   showAgeAndLangs: function () {
+//     console.log(
+//       `Мне ${this.age} и я владею языками: ${this.skills.languages
+//         .join(", ")
+//         .toUpperCase()}`
+//     )
+//   },
+//   name: "Peter",
+//   age: "29",
+//   skills: {
+//     languages: ["ru", "eng"],
+//     programmingLangs: {
+//       js: "20%",
+//       php: "10%",
+//     },
+//     exp: "1 month",
+//   },
+// }
+
+// function showExperience(plan) {
+//   const { exp } = plan.skills
+//   return exp
+// }
+
+// function showProgrammingLangs(plan) {
+//   let str = ""
+//   const { programmingLangs } = plan.skills
+//   for (let key in programmingLangs) {
+//     str += `Язык ${key} изучен на ${programmingLangs[key]}\n`
+//   }
+
+//   return str
+// }
+
+//
+// const family = ["Peter", "Ann", "Alex", "Linda"]
+
+// function showFamily(arr) {
+//   return arr.length > 0 ? `Семья состоит из: ${arr.join(" ")}` : "Семья пуста"
+// }
+
+// console.log(showFamily(family))
+
+// const favoriteCities = ["liSBon", "ROME", "miLan", "Dublin"]
+
+// function standardizeStrings(arr) {
+//   return arr.forEach((i) => console.log(i.toLowerCase()))
+// }
+
+// console.log(standardizeStrings(favoriteCities))
+
+//
+// const someString = "This is some strange string"
+
+// function reverse(str) {
+//   return str.length > 0 ? str.split("").reverse().join("") : "Ошибка"
+// }
+
+// console.log(reverse(someString))
+
+// const baseCurrencies = ["USD", "EUR"]
+// const additionalCurrencies = ["UAH", "RUB", "CNY"]
+
+// function availableCurr(arr, missingCurr) {
+//   const availableCurrencies = arr.filter(
+//     (currency) => ![...missingCurr].includes(currency)
+//   )
+//   return availableCurrencies.length > 0
+//     ? `Доступные валюты:\n${availableCurrencies.join("\n")}`
+//     : "Нет доступных валют"
+// }
+
+// console.log(availableCurr([...baseCurrencies, ...additionalCurrencies], "CNY"))
+
+//count amount of pages(I'll finish it later)
+// function amountOfPages(summary) {
+//   let pages = 0
+
+//   return pages
+// }
+
+// console.log(amountOfPages(185))
+
+// //1-9 => 1
+// //10-99 => 2
+// //100-999 => 3
+// //1000-9999 => 4
 
 //
