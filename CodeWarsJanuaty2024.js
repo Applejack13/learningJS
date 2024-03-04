@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 //
 // function squareDigits(num) {
@@ -112,3 +112,124 @@
 // }
 
 // console.log(order("is2 Thi1s T4est 3a"))
+
+//
+// function roundToNext5(n) {
+//   if (n % 5 === 0) {
+//     return n
+//   } else if (n > 0) {
+//     return n + (5 - (n % 5))
+//   } else if (n < 0) {
+//     return n - (n % 5)
+//   }
+//   return n
+// }
+
+// console.log(roundToNext5(-6)) // should return -5
+
+//Pete, the baker
+// function cakes(recipe, available) {
+//   result = []
+
+//   for (let key1 in recipe) {
+//     if (recipe.hasOwnProperty(key1) == available.hasOwnProperty(key1)) {
+//       let value = Math.floor(available[key1] / recipe[key1]).toFixed()
+//       result.push(value)
+//     } else {
+//       result.push(0)
+//     }
+//   }
+
+//   return Math.min(...result)
+// }
+
+// console.log(
+//   cakes(
+//     { flour: 1500, milk: 50, sugar: 200, eggs: 10, cinnamon: 1 },
+//     {
+//       flour: 150000,
+//       milk: 6000,
+//       sugar: 5000,
+//       eggs: 200,
+//       vanilla: 100,
+//       cinnamon: 1000,
+//     }
+//   )
+// )
+
+//
+// function sumOfMinimums(arr) {
+//   let result = 0
+
+//   for (let i = 0; i < arr.length; i++) {
+//     result += Math.min(...arr[i])
+//   }
+
+//   return result
+// }
+
+// console.log(
+//   sumOfMinimums([
+//     [1, 2, 3, 4, 5],
+//     [5, 6, 7, 8, 9],
+//     [20, 21, 34, 56, 100],
+//   ])
+// )
+
+//
+// function sqInRect(lng, wdth) {
+//   let result = []
+//   if (lng !== wdth) {
+//     while (lng !== wdth) {
+//       if (lng > wdth) {
+//         result.push(wdth)
+//         lng -= wdth
+//       } else {
+//         result.push(lng)
+//         wdth -= lng
+//       }
+//     }
+//     result.push(lng)
+//   } else return null
+
+//   return result
+// }
+
+// console.log(sqInRect(5, 3))
+
+//
+// function perimeter(n) {
+//   let result = 1,
+//     first = 1,
+//     second = 2
+
+//   for (let i = 0; i < n; i++) {
+//     if (i + 1 === n) {
+//       result += first
+//     } else {
+//       result += first
+//     }
+
+//     let third = first + second
+//     first = second
+//     second = third
+//   }
+
+//   return result * 4
+// }
+
+// console.log(perimeter(30))
+
+//
+// function sumArray(array) {
+//   if (array && array.length > 2) {
+//     let min = Math.min(...array),
+//       max = Math.max(...array);
+
+//     return array.reduce((a, b) => a + b) - min - max;
+//   } else {
+//     return 0;
+//   }
+// }
+
+// console.log(sumArray(null));

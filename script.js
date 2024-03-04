@@ -1,4 +1,4 @@
-"use sctict"
+"use sctict";
 
 // if (4 == 9) {
 //     console.log('Ok!');
@@ -504,30 +504,30 @@
 //fibonacci-numbers
 
 // function fib(num) {
-//     if (num <= 0 || !Number.isInteger(num) || typeof(num) !== 'number') {
-//         return '';
+//   if (num <= 0 || !Number.isInteger(num) || typeof num !== "number") {
+//     return ""
+//   }
+
+//   let result = ""
+//   let first = 0
+//   let second = 1
+
+//   for (let i = 0; i < num; i++) {
+//     if (i + 1 === num) {
+//       result += `${first}`
+//     } else {
+//       result += `${first} `
 //     }
 
-//     let result = '';
-//     let first = 0;
-//     let second = 1;
+//     let third = first + second
+//     first = second
+//     second = third
+//   }
 
-//     for (let i = 0; i < num; i++) {
-//         if (i + 1 === num) {
-//             result += `${first}`;
-//         } else {
-//             result += `${first} `;
-//         }
-
-//         let third = first + second;
-//         first = second;
-//         second = third;
-//     }
-
-//     return result;
+//   return result
 // }
 
-// fib(13);
+// console.log(fib(13))
 
 // let number = 5; debugger
 
@@ -696,7 +696,7 @@
 // console.log(isPrime(10));
 
 const btns = document.querySelectorAll("button"),
-  overlay = document.querySelector(".overlay")
+  overlay = document.querySelector(".overlay");
 
 // btn.onclick = function() {
 //     alert("It's working");
@@ -708,30 +708,30 @@ const btns = document.querySelectorAll("button"),
 
 // let i = 0;
 const deleteElement = (e) => {
-  console.log(e.currentTarget)
-  console.log(e.type)
+  console.log(e.currentTarget);
+  console.log(e.type);
   // e.target.remove();
   // alert("It's working");
   // i++;
   // if (i == 1) {
   //     btn.removeEventListener('click', deleteElement);
   // }
-}
+};
 
 // btn.addEventListener('click', deleteElement);
 // overlay.addEventListener('click', deleteElement);
 
 btns.forEach((btn) => {
-  btn.addEventListener("click", deleteElement, { once: true })
-})
+  btn.addEventListener("click", deleteElement, { once: true });
+});
 
-const link = document.querySelector("a")
+const link = document.querySelector("a");
 
 link.addEventListener("click", (event) => {
-  event.preventDefault()
+  event.preventDefault();
 
-  console.log(event.target)
-})
+  console.log(event.target);
+});
 
 // console.log(document.body);
 // console.log(document.documentElement);
@@ -902,26 +902,26 @@ link.addEventListener("click", (event) => {
 
 // Click on touchscreens
 window.addEventListener("DOMContentLoaded", () => {
-  const box = document.querySelector(".box")
+  const box = document.querySelector(".box");
 
   box.addEventListener("touchstart", (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    console.log("Start")
-  })
+    console.log("Start");
+  });
 
   box.addEventListener("touchmove", (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    console.log("Move")
-  })
+    console.log("Move");
+  });
 
   box.addEventListener("touchend", (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    console.log("End")
-  })
-})
+    console.log("End");
+  });
+});
 
 // const shops = [
 //     {rice: 500},
@@ -969,7 +969,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // console.log(samebigint);
 
 const newButtons = document.querySelectorAll("button"),
-  newWrapper = document.querySelector(".wrapper")
+  newWrapper = document.querySelector(".wrapper");
 
 // console.log(newButtons[4].classList.length);
 // console.log(newButtons[1].classList.item(0));
@@ -987,14 +987,14 @@ newButtons[0].addEventListener("click", () => {
   // } else {
   //     newButtons[1].classList.remove('red');
   // }
-  newButtons[1].classList.toggle("red")
-})
+  newButtons[1].classList.toggle("red");
+});
 
 newWrapper.addEventListener("click", (e) => {
   if (e.target && e.target.matches("button.red")) {
-    console.log("Hello")
+    console.log("Hello");
   }
-})
+});
 
 // newButtons.forEach(createNewBtns => {
 //     createNewBtns.addEventListener('click', () => {
@@ -1002,9 +1002,9 @@ newWrapper.addEventListener("click", (e) => {
 //     });
 // });
 
-const createNewBtns = document.createElement("button")
-createNewBtns.classList.add("red")
-newWrapper.append(createNewBtns)
+const createNewBtns = document.createElement("button");
+createNewBtns.classList.add("red");
+newWrapper.append(createNewBtns);
 
 // const btn = document.querySelector('.btn');
 // let timerId,
@@ -1452,5 +1452,3 @@ newWrapper.append(createNewBtns)
 // //10-99 => 2
 // //100-999 => 3
 // //1000-9999 => 4
-
-//
